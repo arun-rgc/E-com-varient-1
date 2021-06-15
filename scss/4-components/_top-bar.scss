@@ -1,0 +1,56 @@
+.header{
+    &__left-control{
+        width:275px
+    }
+    &__right-control{
+        width: 460px;
+    }
+    &__logo{
+        width: 130px;
+    }
+    &__location{
+        img{
+            width:24px
+        }
+        label{
+            display: block;
+            width: 100%;
+            font-size: 13px;
+        }
+    }
+}
+.user-sec{
+    width: 140px;
+    img{
+        width: 30px;
+        height: 30px;
+    }
+}
+.top-menu{
+    background: color(gradient-1);
+    .nav-link{
+        color: color(white) !important;
+    }
+}
+.multiline-detail{
+    padding-top: 5px;
+    label{
+        &:first-child{
+            line-height: 5px;
+        }
+    }
+}
+.cart-count{
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    width: 15px;
+    height: 15px;
+    background: color(primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: color(white);
+    font-size: 10px;
+}

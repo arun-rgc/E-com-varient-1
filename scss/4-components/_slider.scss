@@ -1,0 +1,28 @@
+.uk-slideshow-items{
+    position: inherit !important;
+    min-height: 100% !important;
+    height: auto;
+    li {
+        img{
+            width: 100% !important;
+            height: 100% !important;
+        }
+    }
+}
+.multi-slider{
+    .uk-slidenav-next{
+        right: -15px;
+    }
+}
+.previous-text{
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.next-text{
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+}
