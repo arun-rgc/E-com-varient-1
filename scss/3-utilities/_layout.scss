@@ -95,9 +95,11 @@
 }
 
 .list-content{
+    width: 90%;
     li{
         position: relative;
         font-size: 13px;
+        margin-bottom: 10px;
         &::before{
             content: "";
             position: absolute;

@@ -295,9 +295,14 @@ button, input, text-area {
   color: #3E3E3E;
 }
 
+.list-content {
+  width: 90%;
+}
+
 .list-content li {
   position: relative;
   font-size: 13px;
+  margin-bottom: 10px;
 }
 
 .list-content li::before {
@@ -754,6 +759,7 @@ button {
 
 .service-block {
   margin: 0px 35px;
+  margin-bottom: 50px;
   position: relative;
   width: 40px;
   height: 40px;
@@ -767,7 +773,7 @@ button {
 
 .service-block span {
   position: absolute;
-  bottom: -25px;
+  top: 45px;
   font-size: 13px;
   font-weight: 500;
   text-align: center;

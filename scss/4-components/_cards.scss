@@ -121,6 +121,7 @@
 
 .service-block{
     margin: 0px 35px;
+    margin-bottom: 50px;
     position: relative;
     width: 40px;
     height: 40px;
@@ -130,7 +131,7 @@
     background: color(gray-200);
     span{
         position: absolute;
-        bottom: -25px;
+        top: 45px;
         font-size: 13px;
         font-weight: weight(medium);
         text-align: center;
