@@ -60,3 +60,80 @@
 }
 
 
+
+.product-card_2{
+    border-radius: 50% !important;
+    height: 130px;
+    width: 130px;
+    text-align: center;
+    .product-name{
+        font-weight: weight(bold);
+    }
+    img{
+        width: 50%;
+    }
+}
+.product-card_3{
+    border-radius: 50% !important;
+    height: 70px;
+    width: 70px !important;
+    text-align: center;
+    background: color(gray-100);
+    @include shadow-1;
+    @include flex-center;
+}
+.product-card_4{
+    height: 70px;
+    width: 70px !important;
+    text-align: center;
+    background: color(gray-100);
+    @include shadow-1;
+    @include d-flex-wrap;
+    flex-direction: row;
+    justify-content: start;
+    p{
+        margin: 0;
+        font-size: 13px;
+        text-align: center;
+        width: 100%;
+    }
+    img{
+        width:40px
+    }
+}
+.product-card_5{
+    p{  
+        padding: 5px;
+        text-align: center;
+        background: color(gray-100);
+        margin: 0px;
+    }
+}
+
+.cart-card{
+    width: 100%;
+    height: fit-content;
+    background: color(gray-200);
+    margin-top: 20px;
+    border-radius: 4px;
+    padding: 15px;
+}
+
+.service-block{
+    margin: 0px 35px;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 10px;
+    @include flex-center;
+    background: color(gray-200);
+    span{
+        position: absolute;
+        bottom: -25px;
+        font-size: 13px;
+        font-weight: weight(medium);
+        text-align: center;
+        width: 110px;
+    }
+}

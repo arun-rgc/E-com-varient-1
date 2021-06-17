@@ -65,6 +65,16 @@
     overflow: hidden;
     /* autoprefixer: off */
 }
+.text-truncate-3{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical !important;  
+    overflow: hidden;
+    /* autoprefixer: off */
+}
+.line-height-inherit{
+    line-height: inherit !important;
+}
 
 .payment-options{
     img{
@@ -77,5 +87,26 @@
     overflow-x: scroll;
     &::-webkit-scrollbar {
         display: none;
+    }
+}
+.info{
+    font-size: 13px;
+    color: color(medium);
+}
+
+.list-content{
+    li{
+        position: relative;
+        font-size: 13px;
+        &::before{
+            content: "";
+            position: absolute;
+            width:8px;
+            height: 8px;
+            background: color(gray-200);
+            border-radius: 50%;
+            left: -22px;
+            top:8px;
+        }
     }
 }

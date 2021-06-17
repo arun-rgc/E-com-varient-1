@@ -1,11 +1,11 @@
 .btn-primary{
     color: color(white);
-    background-color: color(primary);
-    border-color: color(primary);
+    background-color: color(primary) !important;
+    border-color: color(primary) !important;
     &:hover,&:focus{
         box-shadow: none;
-        background-color: darken(color(primary), 10%);
-        border-color: darken(color(primary), 10%);
+        background-color: darken(color(primary), 10%) !important;
+        border-color: darken(color(primary), 10%) !important;
     }
 }
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle{
@@ -13,7 +13,16 @@
     background-color: darken(color(primary), 10%) !important;
     border-color: darken(color(primary), 10%) !important;
 }
-
+.btn-primary-outlined{
+    color: color(primary) !important;
+    background-color: color(transparent) !important;
+    border-color: color(primary) !important;
+    &:hover,&:focus{
+        box-shadow: none;
+        background-color: darken(color(primary), 10%) !important;
+        border-color: darken(color(primary), 10%) !important;
+    }
+}
 button{
     display: flex;
     flex-wrap: nowrap;
@@ -54,4 +63,21 @@ button{
     right: 15px !important;
     font-size: 13px;
     font-weight: 400;
+}
+.drop-btn{
+    
+    text-transform: capitalize !important;
+    padding: 0px !important;
+    line-height: inherit !important;
+    border: none !important;
+}
+.Discussion-btn{
+    color: color(smooth) !important;
+    text-transform: capitalize !important;
+    padding: 0px !important;
+    line-height: 25px !important;
+    border: none !important;
+    border-left: 2px solid color(gray-400) !important;
+    padding-left: 10px !important;
+    margin-left: 10px !important;
 }
