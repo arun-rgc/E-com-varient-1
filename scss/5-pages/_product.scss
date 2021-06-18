@@ -20,6 +20,31 @@
 .product-view__grid--item.active{
     border-color: color(primary);
 }
+.product-view-1{
+    padding: 0px 20px;
+    width: 500px;
+    @include d-flex;
+    align-items: flex-start;
+    &__grid{
+        width: 120px;
+        margin-right: 20px;
+        @include d-flex;
+        flex-direction: column;
+        &--item{
+            @include flex-center;
+            border: 2px solid color(gray-200);
+            margin-bottom: 10px;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+    }
+}
+.product-view-1__grid--item.active{
+    border-color: color(primary);
+}
+.product-cartoffer-1{
+    width: 300px;
+}
 .product-purchase{
     width: 300px;
 }

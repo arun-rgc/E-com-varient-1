@@ -1134,6 +1134,34 @@ input:checked::before {
   color: #FFCE31;
 }
 
+.rating-percentage {
+  align-items: center;
+  font-size: 13px;
+}
+
+.rating-percentage__rate {
+  width: 50px;
+}
+
+.rating-percentage__rate i {
+  color: #FFCE31;
+}
+
+.rating-percentage__analysis {
+  height: 5px;
+  background: #adb5bd;
+}
+
+.rating-percentage__analysis--percent {
+  height: 100%;
+  background: #FFCE31;
+}
+
+.rating-percentage__count {
+  text-align: end;
+  width: 60px;
+}
+
 .multi-range__slider {
   position: relative;
   width: 100%;
@@ -1325,6 +1353,38 @@ input:checked::before {
 
 .product-view__grid--item.active {
   border-color: #7E18B0;
+}
+
+.product-view-1 {
+  padding: 0px 20px;
+  width: 500px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.product-view-1__grid {
+  width: 120px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-view-1__grid--item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #e9ecef;
+  margin-bottom: 10px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.product-view-1__grid--item.active {
+  border-color: #7E18B0;
+}
+
+.product-cartoffer-1 {
+  width: 300px;
 }
 
 .product-purchase {
