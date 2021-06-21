@@ -1,0 +1,1476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/uikit.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+</head>
+<body class="bg-white">
+    <!-- header menu -->
+    <div class="container-fluid d-flex flex-wrap p-3 w-100 header align-items-center justify-content-between bg-white" id="top">
+        <div class="header__left-control order-1 order-xl-1 d-flex mb-xl-0 mb-3">
+            <button class="openbtn d-md-none" onclick="openNav()">☰</button> 
+            <div class="header__logo"><img src="../assets/RGC LOGO.svg" alt=""></div>
+            <div class="col d-none d-md-flex header__location align-items-center">
+                <img src="../assets/gmap.svg" alt="">
+                <div class="col d-flex flex-wrap align-items-center h-fit-content ms-2 multiline-detail">
+                    <label class="fz-10 mb-0" for="">Delivery Location</label>
+                    <label class="fz-13 mb-0" for="">Albert Lignsten</label>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl col-12 order-3 order-xl-2 d-flex">
+            <div class="dropdown ">
+                <button class="fz-13 btn btn-light dropdown-toggle category-button" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  All <span class="d-none d-sm-inline">Categories</span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Fashion</a></li>
+                  <li><a class="dropdown-item" href="#">Groceries</a></li>
+                  <li><a class="dropdown-item" href="#">More</a></li>
+                </ul>
+            </div>
+            <div class="search-box">
+                <input class="form-control bg-light fz-13 text-truncate" type="text" placeholder="Search item...">
+                <button><i class="bi bi-search"></i></button>
+            </div>
+        </div>
+        <div class="d-flex d-md-none order-3 w-100 mt-3 fz-13">
+            <i class="bi bi-geo-alt me-3"></i>
+            <span>Deliver to Vineeth, 686212</span>
+        </div>
+        <div class="header__right-control order-2 order-xl-3 d-flex justify-content-end align-items-center mb-xl-0 mb-3">
+            <div class="col-3 order-3 order-md-1 d-none d-md-flex">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-globe fz-13"></i>
+                    <label class="ms-1 fz-13" for="">English</label>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Fashion</a></li>
+                    <li><a class="dropdown-item" href="#">Groceries</a></li>
+                    <li><a class="dropdown-item" href="#">More</a></li>
+                </ul>
+            </div>
+            <div class="col-3 order-2 order-md-2 d-none d-md-flex">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="../assets/uae flag.svg" alt="">
+                    <label class="ms-2 fz-13" for="">UAE</label>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Fashion</a></li>
+                    <li><a class="dropdown-item" href="#">Groceries</a></li>
+                    <li><a class="dropdown-item" href="#">More</a></li>
+                </ul>
+            </div>
+            <div class="user-sec order-4 order-md-3 d-none d-md-flex align-items-center ms-2">
+                <img src="../assets/avatar 1.png" alt="">
+                <div class="d-flex flex-wrap ms-2 multiline-detail">
+                    <label class="fz-10" for="">Good morning</label>
+                    <label class="fz-13" for="">Albert Ligisten</label>
+                </div>
+            </div>
+            <button class="btn dropdown-toggle order-1 order-md-4 d-flex d-md-none" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="../assets/avatar 1.png" alt="">
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Location</a></li>
+                <li><a class="dropdown-item" href="#">Language</a></li>
+                <li><a class="dropdown-item" href="#">Logout</a></li>
+            </ul>
+            <div class="col d-flex order-2 order-md-5 align-items-center">
+                <div class="position-relative me-md-0 me-2">
+                    <i class="bi bi-cart3 fz-20"></i>
+                    <span class="cart-count">10</span>
+                </div>
+                <label class="ms-2 fz-13 d-none d-md-block " for="">My cart</label>
+            </div>
+        </div>
+    </div>
+    <!-- category menu -->
+    <div class="container-fluid d-md-flex d-none p-0 w-100 top-menu align-items-center">
+        <div class="col overflowx-hidden">
+            
+            <nav class="navbar navbar-expand-lg navbar-dark category-menu">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse collapse-menu overflow-hidden" id="navbarNav">
+                    <ul class="navbar-nav col-4 col-md-12">
+                        <li class="nav-item category-menu-item">
+                            <a class="nav-link active" aria-current="page" href="./category.html">Offeres</a>
+                        </li>
+                        <li class="nav-item category-menu-item">
+                        <a class="nav-link" href="./category.html">Grocery</a>
+                        </li>
+                        <li class="nav-item category-menu-item">
+                        <a class="nav-link" href="./category.html">Food & Drinks</a>
+                        </li>
+                        <li class="nav-item category-menu-item">
+                            <a class="nav-link" href="./category.html">Mobiles</a>
+                        </li>
+                        <li class="nav-item category-menu-item">
+                            <a class="nav-link" href="./category.html">Electronics</a>
+                        </li>
+                        <li class="nav-item category-menu-item">
+                            <a class="nav-link" href="./category.html">Fashion</a>
+                        </li>
+                        <li class="nav-item category-menu-item">
+                            <a class="nav-link" href="./category.html">Kitchen</a>
+                        </li>
+                        <div id="category-menu" class="category-onhover d-flex p-4">
+                            <div class="col-md-6 col-12 d-flex">
+                                <div class="col-4">
+                                    <nav class="nav flex-column">
+                                        <label class="fw-500" for="">Categories</label>
+                                        <a class="nav-link active" aria-current="page" href="#">Active</a>
+                                        <a class="nav-link" href="#">Link</a>
+                                        <a class="nav-link" href="#">Link</a>
+                                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                                    </nav>
+                                </div>
+                                <div class="col-4">
+                                    <nav class="nav flex-column">
+                                        <label class="fw-500" for="">Categories</label>
+                                        <a class="nav-link active" aria-current="page" href="#">Active</a>
+                                        <a class="nav-link" href="#">Link</a>
+                                        <a class="nav-link" href="#">Link</a>
+                                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                                    </nav>
+                                </div>
+                                <div class="col-4">
+                                    <nav class="nav flex-column">
+                                        <label class="fw-500" for="">Categories</label>
+                                        <a class="nav-link active" aria-current="page" href="#">Active</a>
+                                        <a class="nav-link" href="#">Link</a>
+                                        <a class="nav-link" href="#">Link</a>
+                                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="col-6  d-md-flex d-none overflow-hidden h-100">
+                                <div class="col me-2">
+                                    <img class="w-100" src="../assets/menu-add1.png" alt="">
+                                </div>
+                                <div class="col-4">
+                                    <img class="w-100 h-100" src="../assets/menu-add2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                    <ul class="navbar-nav col-4 col-md-12 d-flex d-md-none">
+                        <li class="nav-item category-menu-item">
+                            <a class="nav-link active" aria-current="page" href="#">Offeres</a>
+                        </li>
+                        <li class="nav-item category-menu-item">
+                        <a class="nav-link" href="#">Grocery</a>
+                        </li>
+                        <li class="nav-item category-menu-item">
+                        <a class="nav-link" href="#">Food & Drinks</a>
+                        </li>
+                        <li class="nav-item category-menu-item">
+                            <a class="nav-link" href="#">Mobiles</a>
+                        </li>
+                        <li class="nav-item category-menu-item">
+                            <a class="nav-link" href="#">Electronics</a>
+                        </li>
+                        <li class="nav-item category-menu-item">
+                            <a class="nav-link" href="#">Fashion</a>
+                        </li>
+                        <li class="nav-item category-menu-item">
+                            <a class="nav-link" href="#">Kitchen</a>
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </div>
+        <div class="fit-width d-lg-block d-none">
+            <img src="../assets/add-menu.png" alt="">
+        </div>
+    </div>
+    <!-- Ends header menu -->
+
+
+    <!-- mobile menu -->
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="#">Category1</a>
+        <a href="#">Category1</a>
+        <a href="#">Category1</a>
+        <a href="#">Category1</a>
+
+        <hr>
+
+        <div class="d-flex flex-column mt-4">
+            <a href="#">Account</a>
+            <a href="#">Settings</a>
+            <a href="#">About</a>
+            <a href="#">Logout</a>
+        </div>
+    </div>
+    <!-- mobile menu -->
+
+
+    <div class="d-flex flex-wrap w-100 p-3">
+        <div class="col d-flex flex-wrap">
+            <h4 class="fw-500 w-100 col-12 mb-4 ms-2 ms-md-0">Cart</h4>
+            <div class="d-flex flex-wrap cart-item">
+                <img class="cart-item__img" src="../assets/fridge.png" alt="">
+                <div class="cart-item__details col">
+                    <div class="cart-item__details--title">
+                        Samsung 6.5 kg Fully-Automatic Top Loading  Washing Machine (WA65A4002VS/TL, Imperial Silver, Center Jet Technology)
+                    </div>
+                    <label class="w-100 fz-13 mb-2" for="">
+                        Wednesday 03, March, 2021
+                        <img class="ms-3" src="../assets/express.svg" alt="">
+                    </label>
+                    <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="">
+                    <datalist id="datalistOptions">
+                        <option value="1">
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5">
+                    </datalist>
+                    <label for="" class="fz-14 fw-bold">AED 199.00</label>
+                    <label for="" class="fz-13 text-smooth">AED <strike>259.00</strike></label>
+                </div>
+                <div class="cart-item__btn">
+                    <button class="btn">Add to favorite</button>
+                    <button class="btn">Delete from cart</button>
+                </div>
+            </div>
+            <div class="d-flex flex-wrap cart-item">
+                <img class="cart-item__img" src="../assets/fridge.png" alt="">
+                <div class="cart-item__details col">
+                    <div class="cart-item__details--title">
+                        Samsung 6.5 kg Fully-Automatic Top Loading  Washing Machine (WA65A4002VS/TL, Imperial Silver, Center Jet Technology)
+                    </div>
+                    <label class="w-100 fz-13 mb-2" for="">
+                        Wednesday 03, March, 2021
+                        <img class="ms-3" src="../assets/express.svg" alt="">
+                    </label>
+                    <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="">
+                    <datalist id="datalistOptions">
+                        <option value="1">
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5">
+                    </datalist>
+                    <label for="" class="fz-14 fw-bold">AED 199.00</label>
+                    <label for="" class="fz-13 text-smooth">AED <strike>259.00</strike></label>
+                </div>
+                <div class="cart-item__btn">
+                    <button class="btn">Add to favorite</button>
+                    <button class="btn">Delete from cart</button>
+                </div>
+            </div>
+            <div class="d-flex flex-wrap cart-item">
+                <img class="cart-item__img" src="../assets/fridge.png" alt="">
+                <div class="cart-item__details col">
+                    <div class="cart-item__details--title">
+                        Samsung 6.5 kg Fully-Automatic Top Loading  Washing Machine (WA65A4002VS/TL, Imperial Silver, Center Jet Technology)
+                    </div>
+                    <label class="w-100 fz-13 mb-2" for="">
+                        Wednesday 03, March, 2021
+                        <img class="ms-3" src="../assets/express.svg" alt="">
+                    </label>
+                    <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="">
+                    <datalist id="datalistOptions">
+                        <option value="1">
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5">
+                    </datalist>
+                    <label for="" class="fz-14 fw-bold">AED 199.00</label>
+                    <label for="" class="fz-13 text-smooth">AED <strike>259.00</strike></label>
+                </div>
+                <div class="cart-item__btn">
+                    <button class="btn">Add to favorite</button>
+                    <button class="btn">Delete from cart</button>
+                </div>
+            </div>
+            <h4 class="fw-500 w-100 col-12 mb-2 ms-md-0">Favorite items</h4>
+
+            <ul class="nav nav-pills mb-3 border-bottom w-100 nav-tab-1" id="pills-tab" role="tablist">
+                <li class="nav-item me-3" role="presentation">
+                <button class="nav-link active" id="pills-savelater-tab" data-bs-toggle="pill" data-bs-target="#pills-savelater" type="button" role="tab" aria-controls="pills-savelater" aria-selected="true">Saved for later</button>
+                </li>
+                <li class="nav-item me-3" role="presentation">
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Wishlist</button>
+                </li>
+                <li class="nav-item me-3" role="presentation">
+                <button class="nav-link" id="pills-again-tab" data-bs-toggle="pill" data-bs-target="#pills-again" type="button" role="tab" aria-controls="pills-again" aria-selected="false">Buy it again</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active py-4" id="pills-savelater" role="tabpanel" aria-labelledby="pills-savelater-tab">
+                    <div class="d-flex flex-wrap cart-item">
+                        <img class="cart-item__img" src="../assets/fridge.png" alt="">
+                        <div class="cart-item__details col">
+                            <div class="cart-item__details--title">
+                                Samsung 6.5 kg Fully-Automatic Top Loading  Washing Machine (WA65A4002VS/TL, Imperial Silver, Center Jet Technology)
+                            </div>
+                            <label class="w-100 fz-13 mb-2" for="">
+                                Wednesday 03, March, 2021
+                                <img class="ms-3" src="../assets/express.svg" alt="">
+                            </label>
+                            <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="">
+                            <datalist id="datalistOptions">
+                                <option value="1">
+                                <option value="2">
+                                <option value="3">
+                                <option value="4">
+                                <option value="5">
+                            </datalist>
+                            <label for="" class="fz-14 fw-bold">AED 199.00</label>
+                            <label for="" class="fz-13 text-smooth">AED <strike>259.00</strike></label>
+                        </div>
+                        <div class="cart-item__btn">
+                            <button class="btn">Add to favorite</button>
+                            <button class="btn">Delete from cart</button>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap cart-item">
+                        <img class="cart-item__img" src="../assets/fridge.png" alt="">
+                        <div class="cart-item__details col">
+                            <div class="cart-item__details--title">
+                                Samsung 6.5 kg Fully-Automatic Top Loading  Washing Machine (WA65A4002VS/TL, Imperial Silver, Center Jet Technology)
+                            </div>
+                            <label class="w-100 fz-13 mb-2" for="">
+                                Wednesday 03, March, 2021
+                                <img class="ms-3" src="../assets/express.svg" alt="">
+                            </label>
+                            <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="">
+                            <datalist id="datalistOptions">
+                                <option value="1">
+                                <option value="2">
+                                <option value="3">
+                                <option value="4">
+                                <option value="5">
+                            </datalist>
+                            <label for="" class="fz-14 fw-bold">AED 199.00</label>
+                            <label for="" class="fz-13 text-smooth">AED <strike>259.00</strike></label>
+                        </div>
+                        <div class="cart-item__btn">
+                            <button class="btn">Add to favorite</button>
+                            <button class="btn">Delete from cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <div class="d-flex flex-wrap cart-item">
+                        <img class="cart-item__img" src="../assets/fridge.png" alt="">
+                        <div class="cart-item__details col">
+                            <div class="cart-item__details--title">
+                                Samsung 6.5 kg Fully-Automatic Top Loading  Washing Machine (WA65A4002VS/TL, Imperial Silver, Center Jet Technology)
+                            </div>
+                            <label class="w-100 fz-13 mb-2" for="">
+                                Wednesday 03, March, 2021
+                                <img class="ms-3" src="../assets/express.svg" alt="">
+                            </label>
+                            <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="">
+                            <datalist id="datalistOptions">
+                                <option value="1">
+                                <option value="2">
+                                <option value="3">
+                                <option value="4">
+                                <option value="5">
+                            </datalist>
+                            <label for="" class="fz-14 fw-bold">AED 199.00</label>
+                            <label for="" class="fz-13 text-smooth">AED <strike>259.00</strike></label>
+                        </div>
+                        <div class="cart-item__btn">
+                            <button class="btn">Add to favorite</button>
+                            <button class="btn">Delete from cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-again" role="tabpanel" aria-labelledby="pills-again-tab">
+                    <div class="d-flex flex-wrap cart-item">
+                        <img class="cart-item__img" src="../assets/fridge.png" alt="">
+                        <div class="cart-item__details col">
+                            <div class="cart-item__details--title">
+                                Samsung 6.5 kg Fully-Automatic Top Loading  Washing Machine (WA65A4002VS/TL, Imperial Silver, Center Jet Technology)
+                            </div>
+                            <label class="w-100 fz-13 mb-2" for="">
+                                Wednesday 03, March, 2021
+                                <img class="ms-3" src="../assets/express.svg" alt="">
+                            </label>
+                            <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="">
+                            <datalist id="datalistOptions">
+                                <option value="1">
+                                <option value="2">
+                                <option value="3">
+                                <option value="4">
+                                <option value="5">
+                            </datalist>
+                            <label for="" class="fz-14 fw-bold">AED 199.00</label>
+                            <label for="" class="fz-13 text-smooth">AED <strike>259.00</strike></label>
+                        </div>
+                        <div class="cart-item__btn">
+                            <button class="btn">Add to favorite</button>
+                            <button class="btn">Delete from cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cart-sidebar flex-wrap ms-4">
+            <div class="cart-card d-flex">
+                <div class="cart-total-count">
+                    <label class="w-100 fw-500 mb-2" for="">Total cart Items</label>
+                    <span class="fw-bold fz-20">3</span>
+                </div>
+                <div class="col">
+                    <label class="w-100 fw-500 mb-2"  for="">Total cart Items</label>
+                    <span class="w-100 fw-bold fz-20" >AED 4199.00</span>
+                    <label class="w-100 fz-12"  for="">You save <span class="fw-bold ms-1">AED 470.00</span></label>
+                </div>
+            </div>
+            <div class="coupon-code my-3 ">
+                <label class="form-label">Apply coupon code </label>
+                <input type="text" class="form-control col" placeholder="Gift card/Coupon code">
+                <button class="btn btn-primary">
+                    Apply
+                </button>
+            </div>
+            <button class="btn btn-primary w-100 py-2 fz-18 my-3"><i class="bi bi-hand-index-thumb me-3"></i>Checkout</button>
+            <!-- add Section -->
+            <div class="col-12 mt-4">
+                <img class="w-100" src="../assets/add-16.png" alt="">
+            </div>
+                
+            <div class="col-12 mt-4">
+                <img class="w-100" src="../assets/add-17.png" alt="">
+            </div>
+
+            <div class="col-12 mt-4">
+                <img class="w-100" src="../assets/add-18.png" alt="">
+            </div>
+            <!-- Ends add section -->
+
+        </div>
+    </div>
+
+    
+
+
+    <!-- product slider Section -->
+    <div class="container-fluid d-flex flex-wrap mt-3 p-3 w-100">
+        <h4 class="fw-500 min-fit-width col-12 mb-2 ms-2 ms-md-0">Best offers</h4>
+        <div class="col-12 multi-slider">
+            <div class="uk-position-relative uk-visible-toggle uk-dark px-10px" tabindex="-1" uk-slider>
+
+                <ul class="uk-slider-items uk-child-width-1-1 uk-child-width-1-2@sm uk-child-width-1-2@s uk-child-width-1-5@m">
+                    <li class="pb-3 border-0 d-flex">
+                        <div class="product-card_1 card p-3 w-90 mx-auto position-relative">
+                            <div class="product-offer">
+                                <label class="d-flex flex-column" for="">
+                                    <span class="offer me-1">18%</span>
+                                    <span>off</span>
+                                </label>
+                            </div>
+                            <div class="wish-list pointer">
+                                <i class="bi bi-heart"></i>
+                                <i class="bi bi-heart-fill d-none"></i>
+                            </div>
+                            <img class="mx-auto py-3 w-75" src="../assets/product-1.png" alt="">
+                            
+                            <div class="d-flex flex-wrap justify-content-between align-items-center">
+                                <div class="d-flex align-items-center" for="">
+                                    <span class="rating me-2 px-2 text-white small bg-info">4.5</span>
+                                    <div class="star-rating">
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-half small"></i>
+                                    </div>
+                                    
+                                    <div class="rating-details"></div>
+                                </div>
+                                <p class="mt-0 mb-2 product-name"> 
+                                    Samsung 6.5 kg Fully-Automatic Top Loading Washing Machine  A65A4002VS/TL
+                                </p>
+                                
+                            </div>
+                            <div class="d-flex  text-dark product-price">
+                                <label class="fw-bold me-3" for="">
+                                    AED 4199.00
+                                </label>
+                                <label for="">
+                                    <strike class="text-secondary small">AED 4199.00</strike>
+                                </label>
+                            </div>
+                            <label class="text-danger offer-time" for="">offer ends in 16:20:23</label>
+                            <div class="d-flex justify-content-between mt-2 pb-2">
+                                <button class="btn btn-main-outline text-uppercase product-btn">Add to cart</button>
+                                <button class="btn btn-main text-uppercase product-btn">Buy now</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="pb-3 border-0 d-flex">
+                        <div class="product-card_1 card p-3 w-90 mx-auto position-relative">
+                            <div class="product-offer">
+                                <label class="d-flex flex-column" for="">
+                                    <span class="offer me-1">18%</span>
+                                    <span>off</span>
+                                </label>
+                            </div>
+                            <div class="wish-list pointer">
+                                <i class="bi bi-heart"></i>
+                                <i class="bi bi-heart-fill d-none"></i>
+                            </div>
+                            <img class="mx-auto py-3 w-75" src="../assets/product-1.png" alt="">
+                            
+                            <div class="d-flex flex-wrap justify-content-between align-items-center">
+                                <div class="d-flex align-items-center" for="">
+                                    <span class="rating me-2 px-2 text-white small bg-info">4.5</span>
+                                    <div class="star-rating">
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-half small"></i>
+                                    </div>
+                                    
+                                    <div class="rating-details"></div>
+                                </div>
+                                <p class="mt-0 mb-2 product-name"> 
+                                    Samsung 6.5 kg Fully-Automatic Top Loading Washing Machine  A65A4002VS/TL
+                                </p>
+                                
+                            </div>
+                            <div class="d-flex  text-dark product-price">
+                                <label class="fw-bold me-3" for="">
+                                    AED 4199.00
+                                </label>
+                                <label for="">
+                                    <strike class="text-secondary small">AED 4199.00</strike>
+                                </label>
+                            </div>
+                            <label class="text-danger offer-time" for="">offer ends in 16:20:23</label>
+                            <div class="d-flex justify-content-between mt-2 pb-2">
+                                <button class="btn btn-main-outline text-uppercase product-btn">Add to cart</button>
+                                <button class="btn btn-main text-uppercase product-btn">Buy now</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="pb-3 border-0 d-flex">
+                        <div class="product-card_1 card p-3 w-90 mx-auto position-relative">
+                            <div class="product-offer">
+                                <label class="d-flex flex-column" for="">
+                                    <span class="offer me-1">18%</span>
+                                    <span>off</span>
+                                </label>
+                            </div>
+                            <div class="wish-list pointer">
+                                <i class="bi bi-heart"></i>
+                                <i class="bi bi-heart-fill d-none"></i>
+                            </div>
+                            <img class="mx-auto py-3 w-75" src="../assets/product-1.png" alt="">
+                            
+                            <div class="d-flex flex-wrap justify-content-between align-items-center">
+                                <div class="d-flex align-items-center" for="">
+                                    <span class="rating me-2 px-2 text-white small bg-info">4.5</span>
+                                    <div class="star-rating">
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-half small"></i>
+                                    </div>
+                                    
+                                    <div class="rating-details"></div>
+                                </div>
+                                <p class="mt-0 mb-2 product-name"> 
+                                    Samsung 6.5 kg Fully-Automatic Top Loading Washing Machine  A65A4002VS/TL
+                                </p>
+                                
+                            </div>
+                            <div class="d-flex  text-dark product-price">
+                                <label class="fw-bold me-3" for="">
+                                    AED 4199.00
+                                </label>
+                                <label for="">
+                                    <strike class="text-secondary small">AED 4199.00</strike>
+                                </label>
+                            </div>
+                            <label class="text-danger offer-time" for="">offer ends in 16:20:23</label>
+                            <div class="d-flex justify-content-between mt-2 pb-2">
+                                <button class="btn btn-main-outline text-uppercase product-btn">Add to cart</button>
+                                <button class="btn btn-main text-uppercase product-btn">Buy now</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="pb-3 border-0 d-flex">
+                        <div class="product-card_1 card p-3 w-90 mx-auto position-relative">
+                            <div class="product-offer">
+                                <label class="d-flex flex-column" for="">
+                                    <span class="offer me-1">18%</span>
+                                    <span>off</span>
+                                </label>
+                            </div>
+                            <div class="wish-list pointer">
+                                <i class="bi bi-heart"></i>
+                                <i class="bi bi-heart-fill d-none"></i>
+                            </div>
+                            <img class="mx-auto py-3 w-75" src="../assets/product-1.png" alt="">
+                            
+                            <div class="d-flex flex-wrap justify-content-between align-items-center">
+                                <div class="d-flex align-items-center" for="">
+                                    <span class="rating me-2 px-2 text-white small bg-info">4.5</span>
+                                    <div class="star-rating">
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-half small"></i>
+                                    </div>
+                                    
+                                    <div class="rating-details"></div>
+                                </div>
+                                <p class="mt-0 mb-2 product-name"> 
+                                    Samsung 6.5 kg Fully-Automatic Top Loading Washing Machine  A65A4002VS/TL
+                                </p>
+                                
+                            </div>
+                            <div class="d-flex  text-dark product-price">
+                                <label class="fw-bold me-3" for="">
+                                    AED 4199.00
+                                </label>
+                                <label for="">
+                                    <strike class="text-secondary small">AED 4199.00</strike>
+                                </label>
+                            </div>
+                            <label class="text-danger offer-time" for="">offer ends in 16:20:23</label>
+                            <div class="d-flex justify-content-between mt-2 pb-2">
+                                <button class="btn btn-main-outline text-uppercase product-btn">Add to cart</button>
+                                <button class="btn btn-main text-uppercase product-btn">Buy now</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="pb-3 border-0 d-flex">
+                        <div class="product-card_1 card p-3 w-90 mx-auto position-relative">
+                            <div class="product-offer">
+                                <label class="d-flex flex-column" for="">
+                                    <span class="offer me-1">18%</span>
+                                    <span>off</span>
+                                </label>
+                            </div>
+                            <div class="wish-list pointer">
+                                <i class="bi bi-heart"></i>
+                                <i class="bi bi-heart-fill d-none"></i>
+                            </div>
+                            <img class="mx-auto py-3 w-75" src="../assets/product-1.png" alt="">
+                            
+                            <div class="d-flex flex-wrap justify-content-between align-items-center">
+                                <div class="d-flex align-items-center" for="">
+                                    <span class="rating me-2 px-2 text-white small bg-info">4.5</span>
+                                    <div class="star-rating">
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-half small"></i>
+                                    </div>
+                                    
+                                    <div class="rating-details"></div>
+                                </div>
+                                <p class="mt-0 mb-2 product-name"> 
+                                    Samsung 6.5 kg Fully-Automatic Top Loading Washing Machine  A65A4002VS/TL
+                                </p>
+                                
+                            </div>
+                            <div class="d-flex  text-dark product-price">
+                                <label class="fw-bold me-3" for="">
+                                    AED 4199.00
+                                </label>
+                                <label for="">
+                                    <strike class="text-secondary small">AED 4199.00</strike>
+                                </label>
+                            </div>
+                            <label class="text-danger offer-time" for="">offer ends in 16:20:23</label>
+                            <div class="d-flex justify-content-between mt-2 pb-2">
+                                <button class="btn btn-main-outline text-uppercase product-btn">Add to cart</button>
+                                <button class="btn btn-main text-uppercase product-btn">Buy now</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="pb-3 border-0 d-flex">
+                        <div class="product-card_1 card p-3 w-90 mx-auto position-relative">
+                            <div class="product-offer">
+                                <label class="d-flex flex-column" for="">
+                                    <span class="offer me-1">18%</span>
+                                    <span>off</span>
+                                </label>
+                            </div>
+                            <div class="wish-list pointer">
+                                <i class="bi bi-heart"></i>
+                                <i class="bi bi-heart-fill d-none"></i>
+                            </div>
+                            <img class="mx-auto py-3 w-75" src="../assets/product-1.png" alt="">
+                            
+                            <div class="d-flex flex-wrap justify-content-between align-items-center">
+                                <div class="d-flex align-items-center" for="">
+                                    <span class="rating me-2 px-2 text-white small bg-info">4.5</span>
+                                    <div class="star-rating">
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-half small"></i>
+                                    </div>
+                                    
+                                    <div class="rating-details"></div>
+                                </div>
+                                <p class="mt-0 mb-2 product-name"> 
+                                    Samsung 6.5 kg Fully-Automatic Top Loading Washing Machine  A65A4002VS/TL
+                                </p>
+                                
+                            </div>
+                            <div class="d-flex  text-dark product-price">
+                                <label class="fw-bold me-3" for="">
+                                    AED 4199.00
+                                </label>
+                                <label for="">
+                                    <strike class="text-secondary small">AED 4199.00</strike>
+                                </label>
+                            </div>
+                            <label class="text-danger offer-time" for="">offer ends in 16:20:23</label>
+                            <div class="d-flex justify-content-between mt-2 pb-2">
+                                <button class="btn btn-main-outline text-uppercase product-btn">Add to cart</button>
+                                <button class="btn btn-main text-uppercase product-btn">Buy now</button>
+                            </div>
+                        </div>
+                    </li>
+                    
+                </ul>
+            
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+            
+            </div>
+        </div>
+    </div>
+    <!-- End product slider Section -->
+
+
+    <!-- product slider Section -->
+    <div class="container-fluid d-flex flex-wrap mt-3 p-3 w-100">
+        <h4 class="fw-500 min-fit-width col-12 mb-2 ms-2 ms-md-0">Best offers</h4>
+        <div class="col-12 multi-slider">
+            <div class="uk-position-relative uk-visible-toggle uk-dark px-10px" tabindex="-1" uk-slider>
+
+                <ul class="uk-slider-items uk-child-width-1-1 uk-child-width-1-2@sm uk-child-width-1-2@s uk-child-width-1-5@m">
+                    <li class="pb-3 border-0 d-flex">
+                        <div class="product-card_1 card p-3 w-90 mx-auto position-relative">
+                            <div class="product-offer">
+                                <label class="d-flex flex-column" for="">
+                                    <span class="offer me-1">18%</span>
+                                    <span>off</span>
+                                </label>
+                            </div>
+                            <div class="wish-list pointer">
+                                <i class="bi bi-heart"></i>
+                                <i class="bi bi-heart-fill d-none"></i>
+                            </div>
+                            <img class="mx-auto py-3 w-75" src="../assets/product-1.png" alt="">
+                            
+                            <div class="d-flex flex-wrap justify-content-between align-items-center">
+                                <div class="d-flex align-items-center" for="">
+                                    <span class="rating me-2 px-2 text-white small bg-info">4.5</span>
+                                    <div class="star-rating">
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-half small"></i>
+                                    </div>
+                                    
+                                    <div class="rating-details"></div>
+                                </div>
+                                <p class="mt-0 mb-2 product-name"> 
+                                    Samsung 6.5 kg Fully-Automatic Top Loading Washing Machine  A65A4002VS/TL
+                                </p>
+                                
+                            </div>
+                            <div class="d-flex  text-dark product-price">
+                                <label class="fw-bold me-3" for="">
+                                    AED 4199.00
+                                </label>
+                                <label for="">
+                                    <strike class="text-secondary small">AED 4199.00</strike>
+                                </label>
+                            </div>
+                            <label class="text-danger offer-time" for="">offer ends in 16:20:23</label>
+                            <div class="d-flex justify-content-between mt-2 pb-2">
+                                <button class="btn btn-main-outline text-uppercase product-btn">Add to cart</button>
+                                <button class="btn btn-main text-uppercase product-btn">Buy now</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="pb-3 border-0 d-flex">
+                        <div class="product-card_1 card p-3 w-90 mx-auto position-relative">
+                            <div class="product-offer">
+                                <label class="d-flex flex-column" for="">
+                                    <span class="offer me-1">18%</span>
+                                    <span>off</span>
+                                </label>
+                            </div>
+                            <div class="wish-list pointer">
+                                <i class="bi bi-heart"></i>
+                                <i class="bi bi-heart-fill d-none"></i>
+                            </div>
+                            <img class="mx-auto py-3 w-75" src="../assets/product-1.png" alt="">
+                            
+                            <div class="d-flex flex-wrap justify-content-between align-items-center">
+                                <div class="d-flex align-items-center" for="">
+                                    <span class="rating me-2 px-2 text-white small bg-info">4.5</span>
+                                    <div class="star-rating">
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-half small"></i>
+                                    </div>
+                                    
+                                    <div class="rating-details"></div>
+                                </div>
+                                <p class="mt-0 mb-2 product-name"> 
+                                    Samsung 6.5 kg Fully-Automatic Top Loading Washing Machine  A65A4002VS/TL
+                                </p>
+                                
+                            </div>
+                            <div class="d-flex  text-dark product-price">
+                                <label class="fw-bold me-3" for="">
+                                    AED 4199.00
+                                </label>
+                                <label for="">
+                                    <strike class="text-secondary small">AED 4199.00</strike>
+                                </label>
+                            </div>
+                            <label class="text-danger offer-time" for="">offer ends in 16:20:23</label>
+                            <div class="d-flex justify-content-between mt-2 pb-2">
+                                <button class="btn btn-main-outline text-uppercase product-btn">Add to cart</button>
+                                <button class="btn btn-main text-uppercase product-btn">Buy now</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="pb-3 border-0 d-flex">
+                        <div class="product-card_1 card p-3 w-90 mx-auto position-relative">
+                            <div class="product-offer">
+                                <label class="d-flex flex-column" for="">
+                                    <span class="offer me-1">18%</span>
+                                    <span>off</span>
+                                </label>
+                            </div>
+                            <div class="wish-list pointer">
+                                <i class="bi bi-heart"></i>
+                                <i class="bi bi-heart-fill d-none"></i>
+                            </div>
+                            <img class="mx-auto py-3 w-75" src="../assets/product-1.png" alt="">
+                            
+                            <div class="d-flex flex-wrap justify-content-between align-items-center">
+                                <div class="d-flex align-items-center" for="">
+                                    <span class="rating me-2 px-2 text-white small bg-info">4.5</span>
+                                    <div class="star-rating">
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-half small"></i>
+                                    </div>
+                                    
+                                    <div class="rating-details"></div>
+                                </div>
+                                <p class="mt-0 mb-2 product-name"> 
+                                    Samsung 6.5 kg Fully-Automatic Top Loading Washing Machine  A65A4002VS/TL
+                                </p>
+                                
+                            </div>
+                            <div class="d-flex  text-dark product-price">
+                                <label class="fw-bold me-3" for="">
+                                    AED 4199.00
+                                </label>
+                                <label for="">
+                                    <strike class="text-secondary small">AED 4199.00</strike>
+                                </label>
+                            </div>
+                            <label class="text-danger offer-time" for="">offer ends in 16:20:23</label>
+                            <div class="d-flex justify-content-between mt-2 pb-2">
+                                <button class="btn btn-main-outline text-uppercase product-btn">Add to cart</button>
+                                <button class="btn btn-main text-uppercase product-btn">Buy now</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="pb-3 border-0 d-flex">
+                        <div class="product-card_1 card p-3 w-90 mx-auto position-relative">
+                            <div class="product-offer">
+                                <label class="d-flex flex-column" for="">
+                                    <span class="offer me-1">18%</span>
+                                    <span>off</span>
+                                </label>
+                            </div>
+                            <div class="wish-list pointer">
+                                <i class="bi bi-heart"></i>
+                                <i class="bi bi-heart-fill d-none"></i>
+                            </div>
+                            <img class="mx-auto py-3 w-75" src="../assets/product-1.png" alt="">
+                            
+                            <div class="d-flex flex-wrap justify-content-between align-items-center">
+                                <div class="d-flex align-items-center" for="">
+                                    <span class="rating me-2 px-2 text-white small bg-info">4.5</span>
+                                    <div class="star-rating">
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-half small"></i>
+                                    </div>
+                                    
+                                    <div class="rating-details"></div>
+                                </div>
+                                <p class="mt-0 mb-2 product-name"> 
+                                    Samsung 6.5 kg Fully-Automatic Top Loading Washing Machine  A65A4002VS/TL
+                                </p>
+                                
+                            </div>
+                            <div class="d-flex  text-dark product-price">
+                                <label class="fw-bold me-3" for="">
+                                    AED 4199.00
+                                </label>
+                                <label for="">
+                                    <strike class="text-secondary small">AED 4199.00</strike>
+                                </label>
+                            </div>
+                            <label class="text-danger offer-time" for="">offer ends in 16:20:23</label>
+                            <div class="d-flex justify-content-between mt-2 pb-2">
+                                <button class="btn btn-main-outline text-uppercase product-btn">Add to cart</button>
+                                <button class="btn btn-main text-uppercase product-btn">Buy now</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="pb-3 border-0 d-flex">
+                        <div class="product-card_1 card p-3 w-90 mx-auto position-relative">
+                            <div class="product-offer">
+                                <label class="d-flex flex-column" for="">
+                                    <span class="offer me-1">18%</span>
+                                    <span>off</span>
+                                </label>
+                            </div>
+                            <div class="wish-list pointer">
+                                <i class="bi bi-heart"></i>
+                                <i class="bi bi-heart-fill d-none"></i>
+                            </div>
+                            <img class="mx-auto py-3 w-75" src="../assets/product-1.png" alt="">
+                            
+                            <div class="d-flex flex-wrap justify-content-between align-items-center">
+                                <div class="d-flex align-items-center" for="">
+                                    <span class="rating me-2 px-2 text-white small bg-info">4.5</span>
+                                    <div class="star-rating">
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-half small"></i>
+                                    </div>
+                                    
+                                    <div class="rating-details"></div>
+                                </div>
+                                <p class="mt-0 mb-2 product-name"> 
+                                    Samsung 6.5 kg Fully-Automatic Top Loading Washing Machine  A65A4002VS/TL
+                                </p>
+                                
+                            </div>
+                            <div class="d-flex  text-dark product-price">
+                                <label class="fw-bold me-3" for="">
+                                    AED 4199.00
+                                </label>
+                                <label for="">
+                                    <strike class="text-secondary small">AED 4199.00</strike>
+                                </label>
+                            </div>
+                            <label class="text-danger offer-time" for="">offer ends in 16:20:23</label>
+                            <div class="d-flex justify-content-between mt-2 pb-2">
+                                <button class="btn btn-main-outline text-uppercase product-btn">Add to cart</button>
+                                <button class="btn btn-main text-uppercase product-btn">Buy now</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="pb-3 border-0 d-flex">
+                        <div class="product-card_1 card p-3 w-90 mx-auto position-relative">
+                            <div class="product-offer">
+                                <label class="d-flex flex-column" for="">
+                                    <span class="offer me-1">18%</span>
+                                    <span>off</span>
+                                </label>
+                            </div>
+                            <div class="wish-list pointer">
+                                <i class="bi bi-heart"></i>
+                                <i class="bi bi-heart-fill d-none"></i>
+                            </div>
+                            <img class="mx-auto py-3 w-75" src="../assets/product-1.png" alt="">
+                            
+                            <div class="d-flex flex-wrap justify-content-between align-items-center">
+                                <div class="d-flex align-items-center" for="">
+                                    <span class="rating me-2 px-2 text-white small bg-info">4.5</span>
+                                    <div class="star-rating">
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-half small"></i>
+                                    </div>
+                                    
+                                    <div class="rating-details"></div>
+                                </div>
+                                <p class="mt-0 mb-2 product-name"> 
+                                    Samsung 6.5 kg Fully-Automatic Top Loading Washing Machine  A65A4002VS/TL
+                                </p>
+                                
+                            </div>
+                            <div class="d-flex  text-dark product-price">
+                                <label class="fw-bold me-3" for="">
+                                    AED 4199.00
+                                </label>
+                                <label for="">
+                                    <strike class="text-secondary small">AED 4199.00</strike>
+                                </label>
+                            </div>
+                            <label class="text-danger offer-time" for="">offer ends in 16:20:23</label>
+                            <div class="d-flex justify-content-between mt-2 pb-2">
+                                <button class="btn btn-main-outline text-uppercase product-btn">Add to cart</button>
+                                <button class="btn btn-main text-uppercase product-btn">Buy now</button>
+                            </div>
+                        </div>
+                    </li>
+                    
+                </ul>
+            
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+            
+            </div>
+        </div>
+    </div>
+    <!-- End product slider Section -->
+
+
+    <!-- Section -->
+    <div class="container-fluid py-3 px-3 mt-3 bg-white">
+        <div class="row">
+            <div class="col-12">
+                <img class="w-100" src="../assets/add-13.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- Ends section -->
+
+
+
+    <!-- product slider Section -->
+    <div class="container-fluid d-flex flex-wrap mt-3 p-3 w-100">
+        <h4 class="fw-500 min-fit-width col-12 mb-2 ms-2 ms-md-0">Best offers</h4>
+        <div class="col-12 multi-slider">
+            <div class="uk-position-relative uk-visible-toggle uk-dark px-10px" tabindex="-1" uk-slider>
+
+                <ul class="uk-slider-items uk-child-width-1-1 uk-child-width-1-2@sm uk-child-width-1-2@s uk-child-width-1-5@m">
+                    <li class="pb-3 border-0 d-flex">
+                        <div class="product-card_1 card p-3 w-90 mx-auto position-relative">
+                            <div class="product-offer">
+                                <label class="d-flex flex-column" for="">
+                                    <span class="offer me-1">18%</span>
+                                    <span>off</span>
+                                </label>
+                            </div>
+                            <div class="wish-list pointer">
+                                <i class="bi bi-heart"></i>
+                                <i class="bi bi-heart-fill d-none"></i>
+                            </div>
+                            <img class="mx-auto py-3 w-75" src="../assets/product-1.png" alt="">
+                            
+                            <div class="d-flex flex-wrap justify-content-between align-items-center">
+                                <div class="d-flex align-items-center" for="">
+                                    <span class="rating me-2 px-2 text-white small bg-info">4.5</span>
+                                    <div class="star-rating">
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-half small"></i>
+                                    </div>
+                                    
+                                    <div class="rating-details"></div>
+                                </div>
+                                <p class="mt-0 mb-2 product-name"> 
+                                    Samsung 6.5 kg Fully-Automatic Top Loading Washing Machine  A65A4002VS/TL
+                                </p>
+                                
+                            </div>
+                            <div class="d-flex  text-dark product-price">
+                                <label class="fw-bold me-3" for="">
+                                    AED 4199.00
+                                </label>
+                                <label for="">
+                                    <strike class="text-secondary small">AED 4199.00</strike>
+                                </label>
+                            </div>
+                            <label class="text-danger offer-time" for="">offer ends in 16:20:23</label>
+                            <div class="d-flex justify-content-between mt-2 pb-2">
+                                <button class="btn btn-main-outline text-uppercase product-btn">Add to cart</button>
+                                <button class="btn btn-main text-uppercase product-btn">Buy now</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="pb-3 border-0 d-flex">
+                        <div class="product-card_1 card p-3 w-90 mx-auto position-relative">
+                            <div class="product-offer">
+                                <label class="d-flex flex-column" for="">
+                                    <span class="offer me-1">18%</span>
+                                    <span>off</span>
+                                </label>
+                            </div>
+                            <div class="wish-list pointer">
+                                <i class="bi bi-heart"></i>
+                                <i class="bi bi-heart-fill d-none"></i>
+                            </div>
+                            <img class="mx-auto py-3 w-75" src="../assets/product-1.png" alt="">
+                            
+                            <div class="d-flex flex-wrap justify-content-between align-items-center">
+                                <div class="d-flex align-items-center" for="">
+                                    <span class="rating me-2 px-2 text-white small bg-info">4.5</span>
+                                    <div class="star-rating">
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-half small"></i>
+                                    </div>
+                                    
+                                    <div class="rating-details"></div>
+                                </div>
+                                <p class="mt-0 mb-2 product-name"> 
+                                    Samsung 6.5 kg Fully-Automatic Top Loading Washing Machine  A65A4002VS/TL
+                                </p>
+                                
+                            </div>
+                            <div class="d-flex  text-dark product-price">
+                                <label class="fw-bold me-3" for="">
+                                    AED 4199.00
+                                </label>
+                                <label for="">
+                                    <strike class="text-secondary small">AED 4199.00</strike>
+                                </label>
+                            </div>
+                            <label class="text-danger offer-time" for="">offer ends in 16:20:23</label>
+                            <div class="d-flex justify-content-between mt-2 pb-2">
+                                <button class="btn btn-main-outline text-uppercase product-btn">Add to cart</button>
+                                <button class="btn btn-main text-uppercase product-btn">Buy now</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="pb-3 border-0 d-flex">
+                        <div class="product-card_1 card p-3 w-90 mx-auto position-relative">
+                            <div class="product-offer">
+                                <label class="d-flex flex-column" for="">
+                                    <span class="offer me-1">18%</span>
+                                    <span>off</span>
+                                </label>
+                            </div>
+                            <div class="wish-list pointer">
+                                <i class="bi bi-heart"></i>
+                                <i class="bi bi-heart-fill d-none"></i>
+                            </div>
+                            <img class="mx-auto py-3 w-75" src="../assets/product-1.png" alt="">
+                            
+                            <div class="d-flex flex-wrap justify-content-between align-items-center">
+                                <div class="d-flex align-items-center" for="">
+                                    <span class="rating me-2 px-2 text-white small bg-info">4.5</span>
+                                    <div class="star-rating">
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-half small"></i>
+                                    </div>
+                                    
+                                    <div class="rating-details"></div>
+                                </div>
+                                <p class="mt-0 mb-2 product-name"> 
+                                    Samsung 6.5 kg Fully-Automatic Top Loading Washing Machine  A65A4002VS/TL
+                                </p>
+                                
+                            </div>
+                            <div class="d-flex  text-dark product-price">
+                                <label class="fw-bold me-3" for="">
+                                    AED 4199.00
+                                </label>
+                                <label for="">
+                                    <strike class="text-secondary small">AED 4199.00</strike>
+                                </label>
+                            </div>
+                            <label class="text-danger offer-time" for="">offer ends in 16:20:23</label>
+                            <div class="d-flex justify-content-between mt-2 pb-2">
+                                <button class="btn btn-main-outline text-uppercase product-btn">Add to cart</button>
+                                <button class="btn btn-main text-uppercase product-btn">Buy now</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="pb-3 border-0 d-flex">
+                        <div class="product-card_1 card p-3 w-90 mx-auto position-relative">
+                            <div class="product-offer">
+                                <label class="d-flex flex-column" for="">
+                                    <span class="offer me-1">18%</span>
+                                    <span>off</span>
+                                </label>
+                            </div>
+                            <div class="wish-list pointer">
+                                <i class="bi bi-heart"></i>
+                                <i class="bi bi-heart-fill d-none"></i>
+                            </div>
+                            <img class="mx-auto py-3 w-75" src="../assets/product-1.png" alt="">
+                            
+                            <div class="d-flex flex-wrap justify-content-between align-items-center">
+                                <div class="d-flex align-items-center" for="">
+                                    <span class="rating me-2 px-2 text-white small bg-info">4.5</span>
+                                    <div class="star-rating">
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-half small"></i>
+                                    </div>
+                                    
+                                    <div class="rating-details"></div>
+                                </div>
+                                <p class="mt-0 mb-2 product-name"> 
+                                    Samsung 6.5 kg Fully-Automatic Top Loading Washing Machine  A65A4002VS/TL
+                                </p>
+                                
+                            </div>
+                            <div class="d-flex  text-dark product-price">
+                                <label class="fw-bold me-3" for="">
+                                    AED 4199.00
+                                </label>
+                                <label for="">
+                                    <strike class="text-secondary small">AED 4199.00</strike>
+                                </label>
+                            </div>
+                            <label class="text-danger offer-time" for="">offer ends in 16:20:23</label>
+                            <div class="d-flex justify-content-between mt-2 pb-2">
+                                <button class="btn btn-main-outline text-uppercase product-btn">Add to cart</button>
+                                <button class="btn btn-main text-uppercase product-btn">Buy now</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="pb-3 border-0 d-flex">
+                        <div class="product-card_1 card p-3 w-90 mx-auto position-relative">
+                            <div class="product-offer">
+                                <label class="d-flex flex-column" for="">
+                                    <span class="offer me-1">18%</span>
+                                    <span>off</span>
+                                </label>
+                            </div>
+                            <div class="wish-list pointer">
+                                <i class="bi bi-heart"></i>
+                                <i class="bi bi-heart-fill d-none"></i>
+                            </div>
+                            <img class="mx-auto py-3 w-75" src="../assets/product-1.png" alt="">
+                            
+                            <div class="d-flex flex-wrap justify-content-between align-items-center">
+                                <div class="d-flex align-items-center" for="">
+                                    <span class="rating me-2 px-2 text-white small bg-info">4.5</span>
+                                    <div class="star-rating">
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-half small"></i>
+                                    </div>
+                                    
+                                    <div class="rating-details"></div>
+                                </div>
+                                <p class="mt-0 mb-2 product-name"> 
+                                    Samsung 6.5 kg Fully-Automatic Top Loading Washing Machine  A65A4002VS/TL
+                                </p>
+                                
+                            </div>
+                            <div class="d-flex  text-dark product-price">
+                                <label class="fw-bold me-3" for="">
+                                    AED 4199.00
+                                </label>
+                                <label for="">
+                                    <strike class="text-secondary small">AED 4199.00</strike>
+                                </label>
+                            </div>
+                            <label class="text-danger offer-time" for="">offer ends in 16:20:23</label>
+                            <div class="d-flex justify-content-between mt-2 pb-2">
+                                <button class="btn btn-main-outline text-uppercase product-btn">Add to cart</button>
+                                <button class="btn btn-main text-uppercase product-btn">Buy now</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="pb-3 border-0 d-flex">
+                        <div class="product-card_1 card p-3 w-90 mx-auto position-relative">
+                            <div class="product-offer">
+                                <label class="d-flex flex-column" for="">
+                                    <span class="offer me-1">18%</span>
+                                    <span>off</span>
+                                </label>
+                            </div>
+                            <div class="wish-list pointer">
+                                <i class="bi bi-heart"></i>
+                                <i class="bi bi-heart-fill d-none"></i>
+                            </div>
+                            <img class="mx-auto py-3 w-75" src="../assets/product-1.png" alt="">
+                            
+                            <div class="d-flex flex-wrap justify-content-between align-items-center">
+                                <div class="d-flex align-items-center" for="">
+                                    <span class="rating me-2 px-2 text-white small bg-info">4.5</span>
+                                    <div class="star-rating">
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-fill small"></i>
+                                        <i class="bi bi-star-half small"></i>
+                                    </div>
+                                    
+                                    <div class="rating-details"></div>
+                                </div>
+                                <p class="mt-0 mb-2 product-name"> 
+                                    Samsung 6.5 kg Fully-Automatic Top Loading Washing Machine  A65A4002VS/TL
+                                </p>
+                                
+                            </div>
+                            <div class="d-flex  text-dark product-price">
+                                <label class="fw-bold me-3" for="">
+                                    AED 4199.00
+                                </label>
+                                <label for="">
+                                    <strike class="text-secondary small">AED 4199.00</strike>
+                                </label>
+                            </div>
+                            <label class="text-danger offer-time" for="">offer ends in 16:20:23</label>
+                            <div class="d-flex justify-content-between mt-2 pb-2">
+                                <button class="btn btn-main-outline text-uppercase product-btn">Add to cart</button>
+                                <button class="btn btn-main text-uppercase product-btn">Buy now</button>
+                            </div>
+                        </div>
+                    </li>
+                    
+                </ul>
+            
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+            
+            </div>
+        </div>
+    </div>
+    <!-- End product slider Section -->
+
+    <!-- spacer -->
+    <div class="my-5"></div>
+    <!-- spacer -->
+
+    <!-- footer -->
+    <div class="container-fluid footer position-relative">
+        <a href="#top" class="scoll-up">Back to Top</a>
+        <div class="container-fluid p-0 mt-4 pb-4 border-bottom d-flex flex-wrap text-white">
+            <div class="col-lg col-12 col-sm-6 mb-lg-0 mb-3">
+                <label class="fw-500 mb-2" for="">Get to Know us</label>
+                <div class="d-flex flex-column">
+                    <a class="footer-link" href="#">About Us</a>
+                    <a class="footer-link" href="#">Contact Us</a>
+                    <a class="footer-link" href="#">Careers</a>
+                    <a class="footer-link" href="#">Press releases</a>
+                    <a class="footer-link" href="#">Stories</a>
+                </div>
+            </div>
+            <div class="col-lg col-12 col-sm-6 mb-lg-0 mb-3">
+                <label class="fw-500 mb-2" for="">Terms & Policies</label>
+                <div class="d-flex flex-column">
+                    <a class="footer-link" href="#">Privacy & securiy </a>
+                    <a class="footer-link" href="#">Return & replacement</a>
+                    <a class="footer-link" href="#">Warranty policy</a>
+                    <a class="footer-link" href="#">Sales policy</a>
+                    <a class="footer-link" href="#">Customer rights</a>
+                    <a class="footer-link" href="#">Terms of use</a>
+                </div>
+            </div>
+            <div class="col-lg col-12 col-sm-6 mb-lg-0 mb-3">
+                <label class="fw-500 mb-2" for="">Partner with us</label>
+                <div class="d-flex flex-column">
+                    <a class="footer-link" href="#">Sell on Domain_name</a>
+                    <a class="footer-link" href="#">Logistic partner with us</a>
+                    <a class="footer-link" href="#">Fulfilment by domain_name</a>
+                    <a class="footer-link" href="#">Become an affiliate</a>
+                    <a class="footer-link" href="#">CAdvertise a product</a>
+                    <a class="footer-link" href="#">Integrations</a>
+                    <a class="footer-link" href="#">Join our network</a>
+                </div>
+            </div>
+            <div class="col-lg col-12 col-sm-6 mb-lg-0 mb-3">
+                <label class="fw-500 mb-2" for="">Connect wtih us</label>
+                <div class="d-flex flex-column">
+                    <a class="footer-link" href="#">Facebook</a>
+                    <a class="footer-link" href="#">Twitter</a>
+                    <a class="footer-link" href="#">Linkedin</a>
+                    <a class="footer-link" href="#">Instagram</a>
+                    <a class="footer-link" href="#">Youtube</a>
+                </div>
+            </div>
+            <div class="col-lg col-12 col-sm-6 mb-lg-0 mb-3">
+                <label class="fw-500 mb-2" for="">Help center</label>
+                <div class="d-flex flex-column">
+                    <a class="footer-link" href="#">Email support</a>
+                    <a class="footer-link" href="#">Chat</a>
+                    <a class="footer-link" href="#">COVID updates</a>
+                </div>
+                <label class="fw-500 mb-2 mt-3" for="">Download</label>
+                <div class="d-flex">
+                    <a class="me-3" href="#">
+                        <img src="../assets/google-play.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="../assets/app-store.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid d-flex flex-wrap align-items-center justify-content-center py-3">
+            <label class="text-white col-md-12 mb-md-0 pb-3 text-center small" for=""> ©2021 rgcdynamics.com All Rights Reserved</label>
+            <div class="d-flex flex-wrap justify-content-center payment-options ms-3">
+                <img class="m-1" src="../assets/payment1.png" alt="">
+                <img class="m-1" src="../assets/payment1.png" alt="">
+                <img class="m-1" src="../assets/payment1.png" alt="">
+                <img class="m-1" src="../assets/payment1.png" alt="">
+                <img class="m-1" src="../assets/payment1.png" alt="">
+                <img class="m-1" src="../assets/payment1.png" alt="">
+                <img class="m-1" src="../assets/payment1.png" alt="">
+                <img class="m-1" src="../assets/payment1.png" alt="">
+                <img class="m-1" src="../assets/payment1.png" alt="">
+                <img class="m-1" src="../assets/payment1.png" alt="">
+
+            </div>
+        </div>
+    </div>
+    <!-- end footer -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    
+    <script src="../js/uikit.min.js"></script>
+    <script src="../js/uikit-icons.min.js"></script>
+    <script src="../js/app.js" defer></script>
+</body>
+</html>
