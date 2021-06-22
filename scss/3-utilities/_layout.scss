@@ -13,11 +13,23 @@
     padding-left: 10px !important;
     padding-right: 10px !important;
 }
+.mt-3px{
+    margin-top: 3px !important;
+}
+.mt-6px{
+    margin-top: 6px !important;
+}
 .fw-500{
     font-weight: weight(medium);
 }
-.w-105px{
-    width: 105px !important;
+.h-20px{
+    height: 20px !important;
+}
+.w-min-105px{
+    min-width: 105px !important;
+}
+.w-150px{
+    width: 150px !important;
 }
 .w-110px{
     width: 110px !important;
@@ -75,7 +87,9 @@
 .line-height-inherit{
     line-height: inherit !important;
 }
-
+.line-height-initial{
+    line-height: initial !important;
+}
 .payment-options{
     img{
         width: auto;

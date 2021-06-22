@@ -220,12 +220,28 @@ button, input, text-area {
   padding-right: 10px !important;
 }
 
+.mt-3px {
+  margin-top: 3px !important;
+}
+
+.mt-6px {
+  margin-top: 6px !important;
+}
+
 .fw-500 {
   font-weight: 500;
 }
 
-.w-105px {
-  width: 105px !important;
+.h-20px {
+  height: 20px !important;
+}
+
+.w-min-105px {
+  min-width: 105px !important;
+}
+
+.w-150px {
+  width: 150px !important;
 }
 
 .w-110px {
@@ -294,6 +310,10 @@ button, input, text-area {
 
 .line-height-inherit {
   line-height: inherit !important;
+}
+
+.line-height-initial {
+  line-height: initial !important;
 }
 
 .payment-options img {
@@ -672,7 +692,7 @@ button {
   border: none !important;
 }
 
-.Discussion-btn {
+.discussion-btn {
   color: #737373 !important;
   text-transform: capitalize !important;
   padding: 0px !important;
@@ -727,7 +747,7 @@ button {
 
 .top-menu .category-onhover {
   display: none !important;
-  position: fixed;
+  position: absolute;
   width: 100%;
   top: 124px;
   z-index: 4600000000;
@@ -850,6 +870,19 @@ button {
   color: #fff !important;
 }
 
+.payment-method {
+  min-height: 420px;
+}
+
+.payment-accordion .accordion-item {
+  border: none;
+}
+
+.payment-accordion .accordion-button:not(.collapsed) {
+  background: #fff0;
+  color: #000;
+}
+
 .search-box {
   position: relative;
   width: 100%;
@@ -967,6 +1000,14 @@ input:checked::before {
   border-bottom-right-radius: 0px;
 }
 
+.qty-drop {
+  max-width: 60px;
+  height: 30px;
+  font-size: 10px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
 .footer-link {
   text-decoration: none;
   color: #fff !important;
@@ -976,6 +1017,10 @@ input:checked::before {
 .footer {
   height: auto;
   background: linear-gradient(90deg, #7E17AF 0%, #0EA8E9 100%);
+}
+
+.header {
+  border-bottom: 1px solid #f5f5f5;
 }
 
 .header__left-control {
@@ -1038,6 +1083,10 @@ input:checked::before {
   justify-content: center;
   color: #fff;
   font-size: 10px;
+}
+
+.category-menu:hover ~ .category-onhover {
+  display: flex !important;
 }
 
 .sidebar {
@@ -1356,6 +1405,23 @@ input:checked::before {
   background: #fff0;
 }
 
+.payment-menu {
+  width: 285px;
+}
+
+.payment-menu.nav-pills .nav-link {
+  padding: 10px;
+  border-bottom: 2px solid #fff0;
+  color: #1A1A1A;
+  border-radius: 0px;
+  text-align: left;
+}
+
+.payment-menu.nav-pills .nav-link.active {
+  color: #1A1A1A;
+  background: #f8f9fa;
+}
+
 /*  5-pages  */
 .content-section {
   width: calc(100vw - 260px);
@@ -1579,6 +1645,14 @@ input:checked::before {
   border-right: 1px solid;
 }
 
+.price-width {
+  width: 150px;
+}
+
+.quantity-width {
+  width: 90px !important;
+}
+
 /*  6-responsive  */
 @media (min-width: 992px) {
   .shop-locator {
@@ -1592,6 +1666,21 @@ input:checked::before {
 @media (max-width: 1200px) {
   .top-menu .category-onhover {
     top: 182px;
+  }
+  .cart-sidebar {
+    width: 310px;
+  }
+  .cart-item__btn {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+  .cart-item__details--title {
+    width: 90%;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden;
+    /* autoprefixer: off */
   }
 }
 
@@ -1626,11 +1715,38 @@ input:checked::before {
   .collapse-menu.show {
     display: flex;
   }
+  .top-menu #category-menu.category-onhover {
+    display: none !important;
+  }
+  .cart-item__btn {
+    width: 100%;
+    flex-direction: row;
+    margin: 10px 0;
+  }
+  .cart-item__btn .btn {
+    margin-right: 10px;
+  }
+  .product-cartoffer {
+    width: 50%;
+  }
+  .discussion-btn {
+    width: 100%;
+    text-align: left !important;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    border: none !important;
+  }
 }
 
 @media (max-width: 768px) {
   h3 {
     font-size: 18px !important;
+  }
+  .cart-sidebar {
+    width: 100%;
+  }
+  .product-view {
+    width: 100%;
   }
 }
 
@@ -1640,6 +1756,9 @@ input:checked::before {
   }
   .mobile-shop-locator {
     display: flex;
+  }
+  .price-width {
+    width: fit-content;
   }
 }
 
@@ -1655,9 +1774,30 @@ input:checked::before {
   }
 }
 
+@media (max-width: 500px) {
+  .price-width {
+    width: 150px;
+  }
+  .cart-item__btn .btn {
+    width: 50%;
+  }
+}
+
 @media (max-width: 400px) {
   .header__left-control {
     width: fit-content;
+  }
+  .quantity-width {
+    width: 80px !important;
+  }
+  .price-width {
+    width: 135px;
+  }
+  .cart-item__details {
+    margin-left: 15px;
+  }
+  .cart-item {
+    margin-bottom: 20px;
   }
 }
 

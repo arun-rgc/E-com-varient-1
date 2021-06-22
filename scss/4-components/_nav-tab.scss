@@ -9,3 +9,17 @@
     color: color(dark);
     background: color(invisible);
 }
+.payment-menu{
+    width: 285px;
+}
+.payment-menu.nav-pills .nav-link{
+    padding: 10px;
+    border-bottom: 2px solid color(invisible);
+    color: color(dark);
+    border-radius: 0px;
+    text-align: left;
+}
+.payment-menu.nav-pills .nav-link.active{
+    color: color(dark);
+    background: color(gray-100);
+}
