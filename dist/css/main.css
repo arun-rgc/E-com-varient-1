@@ -632,7 +632,7 @@ button, input, text-area {
 
 .btn-primary-outlined:hover, .btn-primary-outlined:focus {
   box-shadow: none;
-  background-color: #5e1283 !important;
+  background-color: #f7f7f7 !important;
   border-color: #5e1283 !important;
 }
 
@@ -1806,6 +1806,17 @@ input:checked::before {
   }
   .cart-item__btn .btn {
     width: 50%;
+  }
+}
+
+@media (max-width: 420px) {
+  .cart-card {
+    padding: 5px 0;
+    background: #fff;
+  }
+  .cart-card .btn-primary, .cart-card .btn-primary-outlined {
+    width: 48%;
+    margin: auto;
   }
 }
 

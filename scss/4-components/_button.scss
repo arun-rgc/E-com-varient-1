@@ -19,7 +19,7 @@
     border-color: color(primary) !important;
     &:hover,&:focus{
         box-shadow: none;
-        background-color: darken(color(primary), 10%) !important;
+        background-color: darken(color(white), 3%) !important;
         border-color: darken(color(primary), 10%) !important;
     }
 }
