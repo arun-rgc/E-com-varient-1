@@ -146,6 +146,19 @@
     .cart-item__btn .btn{
         width: 50%;
     }
+    .product-view__slider{
+        height: 320px;
+        margin: 0px auto;
+    }
+    .product-slide-img{
+        height: 250px !important;
+        width: auto !important;
+    }
+    .uk-dropdown {
+        display: none;
+        left: inherit !important;
+        right: 0;
+    }
 }
 @media(max-width:420px){
     .cart-card{
