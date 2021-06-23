@@ -1200,6 +1200,14 @@ input:checked::before {
   transform: translateY(-50%);
 }
 
+.product-slide-img {
+  width: 100%;
+}
+
+.seller-product-slider {
+  width: 100%;
+}
+
 .star-rating i {
   color: #FFCE31;
 }
@@ -1747,6 +1755,24 @@ input:checked::before {
   }
   .product-view {
     width: 100%;
+  }
+  .product-view__slider {
+    height: 420px;
+    margin: 0px auto;
+  }
+  .product-slide-img {
+    height: 350px !important;
+    width: auto !important;
+  }
+  .product-cartoffer {
+    width: 100%;
+  }
+  .seller-product-slider {
+    height: 350px !important;
+    width: auto !important;
+  }
+  .seller-slide {
+    height: 300px;
   }
 }
 
