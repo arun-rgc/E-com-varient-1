@@ -1208,6 +1208,10 @@ input:checked::before {
   width: 100%;
 }
 
+.product-view__slider {
+  overflow: hidden;
+}
+
 .star-rating i {
   color: #FFCE31;
 }
