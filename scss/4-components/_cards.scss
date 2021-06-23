@@ -165,3 +165,22 @@
         color: color(black);
     }
 }
+
+
+.user-box{
+    width: 100%;
+    @include d-flex-wrap;
+    flex-direction: column;
+    justify-content: center;
+    &__img{
+        width: 100px;
+        height: 100px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    &__name{
+        margin-bottom: 10px;
+        min-width: 100%;
+        text-align: center;
+    }
+}
