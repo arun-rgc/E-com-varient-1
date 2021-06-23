@@ -22,7 +22,7 @@ function closeNav() {
 
 
 
-//  multi slider
+//  multi range slider
 
 
 var inputLeft = document.getElementById("input-left");

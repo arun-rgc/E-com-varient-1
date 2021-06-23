@@ -25,6 +25,9 @@
         overflow: hidden;
         /* autoprefixer: off */
     }
+    .filter-sidebar{
+        display: none;
+    }
 }
 @media(max-width:992px){
     .product-btn {
@@ -128,9 +131,6 @@
             width: 100% !important;
         }
     }
-    .multi-slider .uk-slidenav-next{
-        right: 0;
-    }
     .bg-sm-white{
         background: color(white);
     }
@@ -140,6 +140,18 @@
 }
 
 @media(max-width:500px){
+    .multi-slider .product-card_2 {
+        width: 100px !important;
+        height: 100px;
+        .product-name {
+            font-weight: 700;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 11px;
+        }
+    }
     .price-width{
         width: 150px;
     }
