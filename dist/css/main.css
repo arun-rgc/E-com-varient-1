@@ -118,7 +118,7 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Roboto', sans-serif !important;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -213,6 +213,22 @@ button, input, text-area {
 
 .fz-20 {
   font-size: 20px !important;
+}
+
+.fz-21 {
+  font-size: 21px !important;
+}
+
+.fz-22 {
+  font-size: 22px !important;
+}
+
+.fz-23 {
+  font-size: 23px !important;
+}
+
+.fz-24 {
+  font-size: 24px !important;
 }
 
 .px-10px {
@@ -326,6 +342,7 @@ button, input, text-area {
 }
 
 .category-menu {
+  padding: 0 !important;
   min-width: 600px;
   overflow-x: scroll;
 }
@@ -369,12 +386,17 @@ button, input, text-area {
   margin: 0px auto;
   width: fit-content;
   height: auto;
-  padding: 8px 12px;
   background: #fff;
   text-decoration: none !important;
   color: #1A1A1A !important;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  padding: 10px 12px;
+  font-size: 13px;
+}
+
+.scoll-up:hover {
+  box-shadow: 0px 6px 10px #00000052;
 }
 
 .text-primary {
@@ -708,6 +730,10 @@ button {
   margin-left: 10px !important;
 }
 
+.card {
+  border: none !important;
+}
+
 .featured-shop {
   max-width: 460px;
   width: 100%;
@@ -754,7 +780,7 @@ button {
   display: none !important;
   position: absolute;
   width: 100%;
-  top: 124px;
+  top: 93px;
   z-index: 4600000000;
   left: 0;
   min-height: 300px;
@@ -770,6 +796,7 @@ button {
   color: #000 !important;
   padding-left: 0px !important;
   padding-bottom: 0 !important;
+  font-size: 13px;
 }
 
 .product-card_2 {
@@ -1072,7 +1099,11 @@ input:checked::before {
 }
 
 .header__right-control {
-  width: 460px;
+  width: 430px;
+}
+
+.header__right-control .btn.dropdown-toggle {
+  padding: 0;
 }
 
 .header__logo {
@@ -1104,6 +1135,7 @@ input:checked::before {
 
 .top-menu .nav-link {
   color: #fff !important;
+  font-size: 13px;
 }
 
 .multiline-detail {
@@ -1118,8 +1150,8 @@ input:checked::before {
   position: absolute;
   top: 0px;
   left: 10px;
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
   background: #7E18B0;
   border-radius: 50%;
   display: flex;
@@ -1557,8 +1589,7 @@ input:checked::before {
 
 .product-name {
   color: #3E3E3E;
-  font-weight: 500;
-  font-size: 14px;
+  font-size: 13px;
   max-width: 400px;
 }
 

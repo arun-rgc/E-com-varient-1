@@ -4,7 +4,10 @@
         width:275px
     }
     &__right-control{
-        width: 460px;
+        width: 430px;
+        .btn.dropdown-toggle{
+            padding: 0;
+        }
     }
     &__logo{
         width: 130px;
@@ -31,6 +34,7 @@
     background: color(gradient-1);
     .nav-link{
         color: color(white) !important;
+        font-size: 13px;
     }
 }
 .multiline-detail{
@@ -45,8 +49,8 @@
     position: absolute;
     top: 0px;
     left: 10px;
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
     background: color(primary);
     border-radius: 50%;
     display: flex;

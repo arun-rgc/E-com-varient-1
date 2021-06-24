@@ -3,12 +3,16 @@
     margin: 0px auto;
     width: fit-content;
     height: auto;
-    padding: 8px 12px;
     background: color(white);
     text-decoration: none !important;
     color: color(dark) !important;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    padding: 10px 12px;
+    font-size: 13px;
+    &:hover{
+        box-shadow: 0px 6px 10px #00000052;
+    }
 }
 @each $name, $color in $colors{
     .text-#{$name}{

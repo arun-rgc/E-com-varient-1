@@ -1,3 +1,6 @@
+.card{
+    border:none !important;
+}
 .featured-shop{
     max-width: 460px;
     width: 100%;
@@ -41,7 +44,7 @@
     display: none !important;
     position: absolute;
     width: 100%;
-    top: 124px;
+    top: 93px;
     z-index: 4600000000;
     left: 0;
     min-height: 300px;
@@ -57,6 +60,7 @@
     color: #000 !important;
     padding-left: 0px !important;
     padding-bottom: 0 !important;
+    font-size: 13px;
 }
 
 
