@@ -359,7 +359,6 @@ button, input, text-area {
 
 .category-menu {
   padding: 0 !important;
-  min-width: 600px;
   overflow-x: scroll;
 }
 
@@ -1124,6 +1123,7 @@ input:checked::before {
 
 .header__logo {
   width: 130px;
+  margin-right: 10px;
 }
 
 .header__location img {
