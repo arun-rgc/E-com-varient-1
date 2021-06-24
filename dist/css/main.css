@@ -231,6 +231,22 @@ button, input, text-area {
   font-size: 24px !important;
 }
 
+.fz-25 {
+  font-size: 25px !important;
+}
+
+.fz-26 {
+  font-size: 26px !important;
+}
+
+.fz-27 {
+  font-size: 27px !important;
+}
+
+.fz-28 {
+  font-size: 28px !important;
+}
+
 .px-10px {
   padding-left: 10px !important;
   padding-right: 10px !important;
@@ -1099,7 +1115,7 @@ input:checked::before {
 }
 
 .header__right-control {
-  width: 430px;
+  width: 410px;
 }
 
 .header__right-control .btn.dropdown-toggle {
@@ -1150,15 +1166,16 @@ input:checked::before {
   position: absolute;
   top: 0px;
   left: 10px;
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
   background: #7E18B0;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fff;
-  font-size: 10px;
+  font-size: 12px;
+  font-weight: 600;
 }
 
 .category-menu:hover ~ .category-onhover {
