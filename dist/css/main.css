@@ -1774,11 +1774,14 @@ input:checked::before {
 }
 
 @media (max-width: 1200px) {
+  .search-box {
+    max-width: 350px;
+  }
   .product-btn {
     width: 90px;
   }
   .top-menu .category-onhover {
-    top: 182px;
+    top: 145px;
   }
   .cart-sidebar {
     width: 310px;
