@@ -176,6 +176,9 @@
     @include d-flex-wrap;
     flex-direction: column;
     justify-content: center;
+    background-image: url('../assets/user-bg.png');
+    background-size: 90%;
+    background-repeat: no-repeat;
     &__img{
         width: 100px;
         height: 100px;
@@ -186,5 +189,25 @@
         margin-bottom: 10px;
         min-width: 100%;
         text-align: center;
+        font-size: 18px;
+    }
+}
+.sidebar__menu{
+    .nav-link.active{
+        background: color(white);
+    }
+    .nav-link{
+        padding: 8px 15px;
+        text-decoration: none !important;
+    }
+}
+.benefit-card{
+    &__icon{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background: color(gray-200);
+        margin-right: 20px;
+        @include flex-center;
     }
 }
