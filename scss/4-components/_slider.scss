@@ -43,6 +43,9 @@
 }
 .personalised-store{
     position: relative;
+    &__img{
+        width: 100%;
+    }
     &__slider{
         position: absolute;
         bottom: 30px;
