@@ -41,3 +41,12 @@
 .product-view__slider{
     overflow: hidden;
 }
+.personalised-store{
+    position: relative;
+    &__slider{
+        position: absolute;
+        bottom: 30px;
+        padding: 15px;
+        width: 100%;
+    }
+}

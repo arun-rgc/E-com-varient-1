@@ -1329,6 +1329,17 @@ input:checked::before {
   overflow: hidden;
 }
 
+.personalised-store {
+  position: relative;
+}
+
+.personalised-store__slider {
+  position: absolute;
+  bottom: 30px;
+  padding: 15px;
+  width: 100%;
+}
+
 .star-rating i {
   color: #FFCE31;
 }
@@ -1834,6 +1845,17 @@ input:checked::before {
 }
 
 @media (max-width: 992px) {
+  .personalised-store {
+    position: relative;
+  }
+  .personalised-store__img {
+    display: none;
+  }
+  .personalised-store__slider {
+    position: inherit;
+    padding: 15px;
+    width: 100%;
+  }
   .product-btn {
     width: 87px;
     font-size: 12px !important;

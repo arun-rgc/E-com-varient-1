@@ -46,6 +46,17 @@
     }
 }
 @media(max-width:992px){
+    .personalised-store{
+        position: relative;
+        &__img{
+            display: none;
+        }
+        &__slider{
+            position: inherit;
+            padding: 15px;
+            width: 100%;
+        }
+    }
     .product-btn {
         width: 87px;
         font-size: 12px !important;
