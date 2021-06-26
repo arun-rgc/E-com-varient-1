@@ -46,6 +46,9 @@
     }
 }
 @media(max-width:992px){
+    .user-sidebar{
+        display: none;
+    }
     .personalised-store{
         position: relative;
         &__img{
@@ -187,7 +190,12 @@
 }
 
 @media(max-width:500px){
-    
+    .benefit-card{
+        flex-direction: column;
+        &__icon{
+            margin-bottom: 10px;
+        }
+    }
     .price-width{
         width: 150px;
     }

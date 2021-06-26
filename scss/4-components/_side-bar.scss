@@ -71,3 +71,18 @@
       padding: 4px;
     }
   }
+
+  .user-sidebar{
+    min-width: 250px;
+    background: color(gray-100);
+    padding: 15px;
+    .nav-link{
+      color: color(medium) !important;
+    }
+    .form-control{
+      width: 75px !important;
+      height: 27px;
+      font-size: 12px;
+      padding: 4px;
+    }
+  }
