@@ -237,7 +237,7 @@
             <div class="d-flex flex-wrap col-12 mb-5">
                 <div class="col-md col-12 mb-4 mb-md-0">
                     <h4 class="fw-500 w-100 col-12 mb-4 ms-2 ms-md-0 mt-0">2. Order Summary</h4>
-                    <div class="card d-flex flex-wrap p-3 mx-3">
+                    <div class="card border d-flex flex-wrap p-3 mx-3">
                         <div class="col-12 d-flex flex-wrap mb-2">
                             <label class="col fz-13" for="">Total Items</label>    
                             <div class="col"><span class="fw-bold fz-13">3</span><a class="fz-13 ms-2" href="">Hide all items</a></div>                        
@@ -266,7 +266,7 @@
                 </div>
                 <div class="col-md col-12 mb-4 mb-md-0">
                     <h4 class="fw-500 w-100 col-12 mb-4 ms-2 ms-md-0 mt-0">3. Delivery address</h4>
-                    <div class="card d-flex flex-wrap p-3 mx-3">
+                    <div class="card border d-flex flex-wrap p-3 mx-3">
                         <div class="col-12 d-flex flex-wrap mb-2">   
                             <div class="col"><span class="fw-bold fz-16">Peter Nonstrictch</span>
                                 <a class="fz-13 ms-2 pe-2 me-2 border-end" href="">Change</a>
@@ -427,7 +427,7 @@
             </div>
             <h4 class="fw-500 w-100 col-12 mb-2 ms-md-0">4. Payment method</h4>
 
-            <div class="d-md-flex d-none flex-wrap p-3 col-12">
+            <div class="d-md-flex d-none flex-wrap col-12 p-3">
                 <div class="d-flex align-items-start bg-gray-100 w-100 payment-method">
                     <div class="nav flex-column nav-pills bg-gray-200 h-100 me-3 payment-menu" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                       <button class="nav-link active" id="v-pills-card-tab" data-bs-toggle="pill" data-bs-target="#v-pills-card" type="button" role="tab" aria-controls="v-pills-card" aria-selected="true">Credit / Debit /ATM card</button>
@@ -438,8 +438,8 @@
                       <button class="nav-link" id="v-pills-emi-tab" data-bs-toggle="pill" data-bs-target="#v-pills-emi" type="button" role="tab" aria-controls="v-pills-emi" aria-selected="false">EMI (Easy Installments) </button>
                       
                     </div>
-                    <div class="tab-content w-100" id="v-pills-tabContent">
-                      <div class="tab-pane fade show active p-4 w-100" id="v-pills-card" role="tabpanel" aria-labelledby="v-pills-card-tab">
+                    <div class="tab-content w-100 h-100" id="v-pills-tabContent">
+                      <div class="tab-pane fade show active p-4 h-100 w-100 position-relative" id="v-pills-card" role="tabpanel" aria-labelledby="v-pills-card-tab">
                         <div class="form-check d-flex w-100 mb-3">
                             <input class="form-check-input mt-3px" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
                             <div class="d-flex flex-wrap w-100 ms-3" for="flexRadioDefault1">
@@ -501,8 +501,9 @@
                                 <button class="btn border bg-white mt-3">Add this card</button>
                             </div>
                         </div>
+                        <button class="btn-primary btn px-4 d-block ms-auto position-absolute  bottom-15px end-15px">Continue</button>
                       </div>
-                      <div class="tab-pane fade p-4 w-100" id="v-pills-banking" role="tabpanel" aria-labelledby="v-pills-banking-tab">
+                      <div class="tab-pane fade p-4 w-100 h-100 position-relative h-100" id="v-pills-banking" role="tabpanel" aria-labelledby="v-pills-banking-tab">
                         <div class="form-check d-flex w-100">
                             <input class="form-check-input mt-3px" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
                             <div class="d-flex flex-wrap w-100 ms-3" for="flexRadioDefault3">
@@ -522,11 +523,12 @@
                                         </datalist>
                                     </div>
                                 </div>
-                                <button class="btn border bg-white mt-3">Continue</button>
+                                
                             </div>
                         </div>
+                        <button class="btn-primary btn px-4 d-block ms-auto position-absolute position-absolute bottom-15px end-15px">Continue</button>
                       </div>
-                      <div class="tab-pane fade p-4 w-100" id="v-pills-delivery" role="tabpanel" aria-labelledby="v-pills-delivery-tab">
+                      <div class="tab-pane fade p-4 w-100 position-relative h-100" id="v-pills-delivery" role="tabpanel" aria-labelledby="v-pills-delivery-tab">
                         <div class="d-flex flex-wrap w-100 ms-3" for="flexRadioDefault3">
                             <label for="" class="col-12 mb-3">
                                 <span class="fz-13">
@@ -553,10 +555,11 @@
                                     </label>
                                 </div>
                             </div>
-                            <button class="btn border bg-white mt-3">Continue</button>
+                            
                         </div>
+                        <button class="btn-primary btn px-4 d-block ms-auto position-absolute position-absolute bottom-15px end-15px">Continue</button>
                       </div>
-                      <div class="tab-pane fade p-4 w-100" id="v-pills-upi" role="tabpanel" aria-labelledby="v-pills-upi-tab">
+                      <div class="tab-pane fade p-4 w-100 h-100 position-relative" id="v-pills-upi" role="tabpanel" aria-labelledby="v-pills-upi-tab">
                         <div class="form-check d-flex w-100">
                             <input class="form-check-input mt-3px" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
                             <div class="d-flex flex-wrap w-100 ms-3" for="flexRadioDefault3">
@@ -574,8 +577,9 @@
                                 <button class="btn border bg-white mt-3">Varify UPI</button>
                             </div>
                         </div>
+                        <button class="btn-primary btn px-4 d-block ms-auto position-absolute position-absolute bottom-15px end-15px">Continue</button>
                       </div>
-                      <div class="tab-pane fade p-4 w-100" id="v-pills-wallet" role="tabpanel" aria-labelledby="v-pills-wallet-tab">
+                      <div class="tab-pane fade p-4 w-100 h-100 position-relative" id="v-pills-wallet" role="tabpanel" aria-labelledby="v-pills-wallet-tab">
                         <div class="form-check d-flex w-100 mb-3">
                             <input class="form-check-input mt-3px" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
                             <div class="d-flex flex-wrap w-100 ms-3" for="flexRadioDefault3">
@@ -606,12 +610,12 @@
                                         <input class="form-control"  placeholder="">
                                     </div>
                                 </div>
-                                <button class="btn border bg-white mt-3">Proceed</button>
+                                
                             </div>
                         </div>
-                        
+                        <button class="btn-primary btn px-4 d-block ms-auto position-absolute position-absolute bottom-15px end-15px">Continue</button>
                       </div>
-                      <div class="tab-pane fade p-4 w-100" id="v-pills-emi" role="tabpanel" aria-labelledby="v-pills-emi-tab">
+                      <div class="tab-pane fade p-4 w-100 h-100 position-relative" id="v-pills-emi" role="tabpanel" aria-labelledby="v-pills-emi-tab">
                         <div class="form-check d-flex w-100">
                             <input class="form-check-input mt-3px" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
                             <div class="d-flex flex-wrap w-100 ms-3" for="flexRadioDefault2">
@@ -658,12 +662,11 @@
                                 <button class="btn border bg-white mt-3">Add this card</button>
                             </div>
                         </div>
+                        <button class="btn-primary btn px-4 d-block ms-auto position-absolute position-absolute bottom-15px end-15px">Continue</button>
                       </div>
                     </div>
                 </div>
             </div>
-
-
             <div class="accordion accordion-flush d-md-none mt-3 w-100 rounded payment-accordion border" id="accordionFlushExample">
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="flush-headingOne">
@@ -672,7 +675,7 @@
                     </button>
                   </h2>
                   <div id="flush-collapseOne" class="accordion-collapse collapse border-bottom" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body p-4">
+                    <div class="accordion-body p-4 pb-5 position-relative">
                         <div class="form-check d-flex w-100">
                             <input class="form-check-input mt-3px" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
                             <div class="d-flex flex-wrap w-100 ms-3" for="flexRadioDefault2">
@@ -719,6 +722,7 @@
                                 <button class="btn border bg-white mt-3">Add this card</button>
                             </div>
                         </div>
+                        <button class="btn-primary btn px-4 d-block ms-auto position-absolute  bottom-15px end-15px">Continue</button>
                     </div>
                   </div>
                 </div>
@@ -728,8 +732,8 @@
                         Net Banking
                     </button>
                   </h2>
-                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body p-4">
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse border-bottom" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body p-4 pb-5 position-relative">
                         <div class="form-check d-flex w-100">
                             <input class="form-check-input mt-3px" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
                             <div class="d-flex flex-wrap w-100 ms-3" for="flexRadioDefault3">
@@ -749,9 +753,10 @@
                                         </datalist>
                                     </div>
                                 </div>
-                                <button class="btn border bg-white mt-3">Continue</button>
+                                
                             </div>
                         </div>
+                        <button class="btn-primary btn px-4 d-block ms-auto position-absolute  bottom-15px end-15px">Continue</button>
                     </div>
                   </div>
                 </div>
@@ -761,8 +766,8 @@
                         On Delivery
                     </button>
                   </h2>
-                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body p-4">
+                  <div id="flush-collapseThree" class="accordion-collapse collapse border-bottom" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body p-4 pb-5 position-relative">
                         <div class="d-flex flex-wrap w-100" for="flexRadioDefault3">
                             <label for="" class="col-12 mb-3">
                                 <span class="fz-13">
@@ -789,8 +794,9 @@
                                     </label>
                                 </div>
                             </div>
-                            <button class="btn border bg-white mt-3">Continue</button>
+                            
                         </div>
+                        <button class="btn-primary btn px-4 d-block ms-auto position-absolute  bottom-15px end-15px">Continue</button>
                     </div>
                   </div>
                 </div>
@@ -800,8 +806,8 @@
                         Other UPI 
                       </button>
                     </h2>
-                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-                      <div class="accordion-body p-4">
+                    <div id="flush-collapseFour" class="accordion-collapse collapse border-bottom" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body p-4 pb-5 position-relative">
                         <div class="form-check d-flex w-100">
                             <input class="form-check-input mt-3px" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
                             <div class="d-flex flex-wrap w-100 ms-3" for="flexRadioDefault3">
@@ -819,6 +825,8 @@
                                 <button class="btn border bg-white mt-3">Varify UPI</button>
                             </div>
                         </div>
+                        <button class="btn-primary btn px-4 d-block ms-auto position-absolute  bottom-15px end-15px">Continue</button>
+                    
                       </div>
                     </div>
                 </div>
@@ -828,8 +836,8 @@
                         Wallets
                       </button>
                     </h2>
-                    <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
-                      <div class="accordion-body p-4">
+                    <div id="flush-collapseFive" class="accordion-collapse collapse border-bottom" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body p-4 pb-5 position-relative">
                         <div class="form-check d-flex w-100 mb-3">
                             <input class="form-check-input mt-3px" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
                             <div class="d-flex flex-wrap w-100 ms-3" for="flexRadioDefault3">
@@ -860,9 +868,11 @@
                                         <input class="form-control"  placeholder="">
                                     </div>
                                 </div>
-                                <button class="btn border bg-white mt-3">Proceed</button>
+                                
                             </div>
                         </div>
+                        <button class="btn-primary btn px-4 d-block ms-auto position-absolute  bottom-15px end-15px">Continue</button>
+                    
                       </div>
                     </div>
                 </div>
@@ -872,8 +882,8 @@
                         EMI (Easy Installments)
                       </button>
                     </h2>
-                    <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
-                      <div class="accordion-body p-4">
+                    <div id="flush-collapseSix" class="accordion-collapse collapse border-botom" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body p-4 pb-5 position-relative">
                         <div class="form-check d-flex w-100">
                             <input class="form-check-input mt-3px" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
                             <div class="d-flex flex-wrap w-100 ms-3" for="flexRadioDefault2">
@@ -920,6 +930,8 @@
                                 <button class="btn border bg-white mt-3">Add this card</button>
                             </div>
                         </div>
+                        <button class="btn-primary btn px-4 d-block ms-auto position-absolute  bottom-15px end-15px">Continue</button>
+                    
                       </div>
                     </div>
                 </div>
