@@ -272,6 +272,10 @@ button, input, text-area {
   min-width: 105px !important;
 }
 
+.w-300px {
+  width: 300px !important;
+}
+
 .w-250px {
   width: 250px !important;
 }
@@ -1086,6 +1090,28 @@ button {
   border-bottom-left-radius: 0 !important;
 }
 
+.search-block {
+  position: relative;
+  width: 100%;
+  margin-right: 16px;
+}
+
+.search-block input {
+  padding-left: 30px !important;
+  border: none;
+  background: #fff !important;
+  border-bottom: 1px solid #c3c3c3;
+  width: 300px;
+  border-radius: 0px;
+}
+
+.search-block i {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+}
+
 .category-button {
   background-color: #e9ecef !important;
   border-top-right-radius: 0 !important;
@@ -1857,6 +1883,30 @@ input:checked::before {
   font-size: 10px;
   display: inline-block;
   margin-right: 10px;
+}
+
+.cart-item__control {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: fit-content;
+}
+
+.cart-item__control--img {
+  width: 50px;
+  height: 50px;
+  background: #f8f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.cart-item__control--name {
+  margin-top: 5px;
+  font-size: 11px;
+  text-align: center;
+  width: 100%;
 }
 
 .cart-item__btn {

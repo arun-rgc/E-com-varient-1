@@ -229,10 +229,10 @@
             <div class="sidebar__menu">
                 <ul class="nav flex-column mt-2 ">
                     <li class="nav-item">
-                      <a class="nav-link active" href="#">Orders</a>
+                      <a class="nav-link" href="#">Orders</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Wishlist</a>
+                      <a class="nav-link active" href="#">Wishlist</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="#">Payments</a>
@@ -260,19 +260,13 @@
 
             <ul class="nav nav-pills mb-3 border-bottom w-100 nav-tab-1" id="pills-tab" role="tablist">
                 <li class="nav-item me-3" role="presentation">
-                <button class="nav-link active" id="pills-savelater-tab" data-bs-toggle="pill" data-bs-target="#pills-savelater" type="button" role="tab" aria-controls="pills-savelater" aria-selected="true">All Orders</button>
+                    <button class="nav-link active" id="pills-savelater-tab" data-bs-toggle="pill" data-bs-target="#pills-savelater" type="button" role="tab" aria-controls="pills-savelater" aria-selected="true">Wishlist1</button>
                 </li>
                 <li class="nav-item me-3" role="presentation">
-                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Open Orders</button>
+                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Wishlist2</button>
                 </li>
                 <li class="nav-item me-3" role="presentation">
-                <button class="nav-link" id="pills-cancel-tab" data-bs-toggle="pill" data-bs-target="#pills-cancel" type="button" role="tab" aria-controls="pills-cancel" aria-selected="false">Cancelled order</button>
-                </li>
-                <li class="nav-item me-3" role="presentation">
-                    <button class="nav-link" id="pills-return-tab" data-bs-toggle="pill" data-bs-target="#pills-return" type="button" role="tab" aria-controls="pills-return" aria-selected="false">Returns</button>
-                </li>
-                <li class="nav-item me-3" role="presentation">
-                    <button class="nav-link" id="pills-return-tab" data-bs-toggle="pill" data-bs-target="#pills-return" type="button" role="tab" aria-controls="pills-return" aria-selected="false">Buy again</button>
+                    <button class="nav-link" id="pills-cancel-tab" data-bs-toggle="pill" data-bs-target="#pills-cancel" type="button" role="tab" aria-controls="pills-cancel" aria-selected="false">Wishlist3</button>
                 </li>
             </ul>
             <div class="tab-content" id="pills-tabContent">
@@ -314,108 +308,68 @@
                         </div>
                         <div class="d-flex flex-wrap ms-4 ps-2 mb-4">
                             <img class="cart-item__img" src="../assets/fridge.png" alt="">
-                            <div class="cart-item__details w-300px">
+                            <div class="cart-item__details col">
                                 <div class="cart-item__details--title">
                                     Samsung 6.5 kg Fully-Automatic Top Loading  Washing Machine (WA65A4002VS/TL, Imperial Silver, Center Jet Technology)
                                 </div>
-                                <label class="w-100 fz-13 mb-2" for="">
-                                    Wednesday 03, March, 2021
-                                    <img class="ms-sm-3" src="../assets/express.svg" alt="">
-                                </label>
-                                <input class="form-control" value="1"  list="datalistOptions" id="exampleDataList" placeholder="">
-                                <datalist id="datalistOptions">
-                                    <option value="1">
-                                    <option value="2">
-                                    <option value="3">
-                                    <option value="4">
-                                    <option value="5">
-                                </datalist>
-                                <label for="" class="fz-14 fw-bold">AED 199.00</label>
-                                <label for="" class="fz-13 text-smooth">AED <strike>259.00</strike></label>
                             </div>
                             <div class="row col">
-                                <div class="cart-item__control col">
-                                    <label class="cart-item__control--img" for="">
-                                        <img src="../assets/review.png" alt="">
+                                <div class="cart-item__details w-300px">
+                                    <label class="fw-bold fz-14 text-danger offer-time" for="">offer ends in 16:20:23</label>
+                                    <label class="w-100 fz-13 mb-2" for="">
+                                        Wednesday 03, March, 2021
+                                        <img class="ms-sm-3" src="../assets/express.svg" alt="">
                                     </label>
-                                    <label class="cart-item__control--name" for="">Product review</label>
+                                    <input class="form-control" value="1"  list="datalistOptions" id="exampleDataList" placeholder="">
+                                    <datalist id="datalistOptions">
+                                        <option value="1">
+                                        <option value="2">
+                                        <option value="3">
+                                        <option value="4">
+                                        <option value="5">
+                                    </datalist>
+                                    <label for="" class="fz-15 fw-bold">AED 199.00</label>
+                                    <label for="" class="fz-13 text-smooth">AED <strike>259.00</strike></label>
                                 </div>
-                                <div class="cart-item__control col">
-                                    <label class="cart-item__control--img" for="">
-                                        <img src="../assets/feedback.png" alt="">
-                                    </label>
-                                    <label class="cart-item__control--name" for="">Leave seller feedback</label>
-                                </div>
-                                <div class="cart-item__control col">
-                                    <label class="cart-item__control--img" for="">
-                                        <img src="../assets/share-gift.png" alt="">
-                                    </label>
-                                    <label class="cart-item__control--name" for="">Share gift reciept</label>
-                                </div>
-                                <div class="cart-item__control col">
-                                    <label class="cart-item__control--img" for="">
-                                        <img src="../assets/item-return.png" alt="">
-                                    </label>
-                                    <label class="cart-item__control--name" for="">Item return</label>
-                                </div>
+                                
                             </div>
                             <div class="cart-item__btn">
-                                <button class="btn">Track this item</button>
-                                <button class="btn">Manage delivery</button>
-                                <button class="btn">Cancel this order</button>
+                                <button class="btn">Buy now</button>
+                                <button class="btn">Add to cart</button>
+                                <button class="btn">Remove from wishlist</button>
                             </div>
                         </div>
                         <div class="d-flex flex-wrap ms-4 ps-2 mb-4">
                             <img class="cart-item__img" src="../assets/fridge.png" alt="">
-                            <div class="cart-item__details w-300px">
+                            <div class="cart-item__details col">
                                 <div class="cart-item__details--title">
                                     Samsung 6.5 kg Fully-Automatic Top Loading  Washing Machine (WA65A4002VS/TL, Imperial Silver, Center Jet Technology)
                                 </div>
-                                <label class="w-100 fz-13 mb-2" for="">
-                                    Wednesday 03, March, 2021
-                                    <img class="ms-sm-3" src="../assets/express.svg" alt="">
-                                </label>
-                                <input class="form-control" value="1"  list="datalistOptions" id="exampleDataList" placeholder="">
-                                <datalist id="datalistOptions">
-                                    <option value="1">
-                                    <option value="2">
-                                    <option value="3">
-                                    <option value="4">
-                                    <option value="5">
-                                </datalist>
-                                <label for="" class="fz-14 fw-bold">AED 199.00</label>
-                                <label for="" class="fz-13 text-smooth">AED <strike>259.00</strike></label>
                             </div>
                             <div class="row col">
-                                <div class="cart-item__control col">
-                                    <label class="cart-item__control--img" for="">
-                                        <img src="../assets/review.png" alt="">
+                                <div class="cart-item__details w-300px">
+                                    <label class="fw-bold fz-14 text-danger offer-time" for="">offer ends in 16:20:23</label>
+                                    <label class="w-100 fz-13 mb-2" for="">
+                                        Wednesday 03, March, 2021
+                                        <img class="ms-sm-3" src="../assets/express.svg" alt="">
                                     </label>
-                                    <label class="cart-item__control--name" for="">Product review</label>
+                                    <input class="form-control" value="1"  list="datalistOptions" id="exampleDataList" placeholder="">
+                                    <datalist id="datalistOptions">
+                                        <option value="1">
+                                        <option value="2">
+                                        <option value="3">
+                                        <option value="4">
+                                        <option value="5">
+                                    </datalist>
+                                    <label for="" class="fz-15 fw-bold">AED 199.00</label>
+                                    <label for="" class="fz-13 text-smooth">AED <strike>259.00</strike></label>
                                 </div>
-                                <div class="cart-item__control col">
-                                    <label class="cart-item__control--img" for="">
-                                        <img src="../assets/feedback.png" alt="">
-                                    </label>
-                                    <label class="cart-item__control--name" for="">Leave seller feedback</label>
-                                </div>
-                                <div class="cart-item__control col">
-                                    <label class="cart-item__control--img" for="">
-                                        <img src="../assets/share-gift.png" alt="">
-                                    </label>
-                                    <label class="cart-item__control--name" for="">Share gift reciept</label>
-                                </div>
-                                <div class="cart-item__control col">
-                                    <label class="cart-item__control--img" for="">
-                                        <img src="../assets/item-return.png" alt="">
-                                    </label>
-                                    <label class="cart-item__control--name" for="">Item return</label>
-                                </div>
+                                
                             </div>
                             <div class="cart-item__btn">
-                                <button class="btn">Track this item</button>
-                                <button class="btn">Manage delivery</button>
-                                <button class="btn">Cancel this order</button>
+                                <button class="btn">Buy now</button>
+                                <button class="btn">Add to cart</button>
+                                <button class="btn">Remove from wishlist</button>
                             </div>
                         </div>
                     </div>
@@ -428,60 +382,73 @@
                         </div>
                         <div class="d-flex flex-wrap ms-4 ps-2 mb-4">
                             <img class="cart-item__img" src="../assets/fridge.png" alt="">
-                            <div class="cart-item__details w-300px">
+                            <div class="cart-item__details col">
                                 <div class="cart-item__details--title">
                                     Samsung 6.5 kg Fully-Automatic Top Loading  Washing Machine (WA65A4002VS/TL, Imperial Silver, Center Jet Technology)
                                 </div>
-                                <label class="w-100 fz-13 mb-2" for="">
-                                    Wednesday 03, March, 2021
-                                    <img class="ms-sm-3" src="../assets/express.svg" alt="">
-                                </label>
-                                <input class="form-control" value="1"  list="datalistOptions" id="exampleDataList" placeholder="">
-                                <datalist id="datalistOptions">
-                                    <option value="1">
-                                    <option value="2">
-                                    <option value="3">
-                                    <option value="4">
-                                    <option value="5">
-                                </datalist>
-                                <label for="" class="fz-14 fw-bold">AED 199.00</label>
-                                <label for="" class="fz-13 text-smooth">AED <strike>259.00</strike></label>
                             </div>
                             <div class="row col">
-                                <div class="cart-item__control col">
-                                    <label class="cart-item__control--img" for="">
-                                        <img src="../assets/review.png" alt="">
+                                <div class="cart-item__details w-300px">
+                                    <label class="fw-bold fz-14 text-danger offer-time" for="">offer ends in 16:20:23</label>
+                                    <label class="w-100 fz-13 mb-2" for="">
+                                        Wednesday 03, March, 2021
+                                        <img class="ms-sm-3" src="../assets/express.svg" alt="">
                                     </label>
-                                    <label class="cart-item__control--name" for="">Product review</label>
+                                    <input class="form-control" value="1"  list="datalistOptions" id="exampleDataList" placeholder="">
+                                    <datalist id="datalistOptions">
+                                        <option value="1">
+                                        <option value="2">
+                                        <option value="3">
+                                        <option value="4">
+                                        <option value="5">
+                                    </datalist>
+                                    <label for="" class="fz-15 fw-bold">AED 199.00</label>
+                                    <label for="" class="fz-13 text-smooth">AED <strike>259.00</strike></label>
                                 </div>
-                                <div class="cart-item__control col">
-                                    <label class="cart-item__control--img" for="">
-                                        <img src="../assets/feedback.png" alt="">
-                                    </label>
-                                    <label class="cart-item__control--name" for="">Leave seller feedback</label>
-                                </div>
-                                <div class="cart-item__control col">
-                                    <label class="cart-item__control--img" for="">
-                                        <img src="../assets/share-gift.png" alt="">
-                                    </label>
-                                    <label class="cart-item__control--name" for="">Share gift reciept</label>
-                                </div>
-                                <div class="cart-item__control col">
-                                    <label class="cart-item__control--img" for="">
-                                        <img src="../assets/item-return.png" alt="">
-                                    </label>
-                                    <label class="cart-item__control--name" for="">Item return</label>
-                                </div>
+                                
                             </div>
                             <div class="cart-item__btn">
-                                <button class="btn">Track this item</button>
-                                <button class="btn">Manage delivery</button>
-                                <button class="btn">Cancel this order</button>
+                                <button class="btn">Buy now</button>
+                                <button class="btn">Add to cart</button>
+                                <button class="btn">Remove from wishlist</button>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-wrap ms-4 ps-2 mb-4">
+                            <img class="cart-item__img" src="../assets/fridge.png" alt="">
+                            <div class="cart-item__details col">
+                                <div class="cart-item__details--title">
+                                    Samsung 6.5 kg Fully-Automatic Top Loading  Washing Machine (WA65A4002VS/TL, Imperial Silver, Center Jet Technology)
+                                </div>
+                            </div>
+                            <div class="row col">
+                                <div class="cart-item__details w-300px">
+                                    <label class="fw-bold fz-14 text-danger offer-time" for="">offer ends in 16:20:23</label>
+                                    <label class="w-100 fz-13 mb-2" for="">
+                                        Wednesday 03, March, 2021
+                                        <img class="ms-sm-3" src="../assets/express.svg" alt="">
+                                    </label>
+                                    <input class="form-control" value="1"  list="datalistOptions" id="exampleDataList" placeholder="">
+                                    <datalist id="datalistOptions">
+                                        <option value="1">
+                                        <option value="2">
+                                        <option value="3">
+                                        <option value="4">
+                                        <option value="5">
+                                    </datalist>
+                                    <label for="" class="fz-15 fw-bold">AED 199.00</label>
+                                    <label for="" class="fz-13 text-smooth">AED <strike>259.00</strike></label>
+                                </div>
+                                
+                            </div>
+                            <div class="cart-item__btn">
+                                <button class="btn">Buy now</button>
+                                <button class="btn">Add to cart</button>
+                                <button class="btn">Remove from wishlist</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <div class="tab-pane fade py-md-4" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                     <div class="d-flex flex-wrap cart-item">
                         <div class="form-check col-12 mb-3">
                             <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
@@ -495,24 +462,31 @@
                                 <div class="cart-item__details--title">
                                     Samsung 6.5 kg Fully-Automatic Top Loading  Washing Machine (WA65A4002VS/TL, Imperial Silver, Center Jet Technology)
                                 </div>
-                                <label class="w-100 fz-13 mb-2" for="">
-                                    Wednesday 03, March, 2021
-                                    <img class="ms-sm-3" src="../assets/express.svg" alt="">
-                                </label>
-                                <input class="form-control" value="1"  list="datalistOptions" id="exampleDataList" placeholder="">
-                                <datalist id="datalistOptions">
-                                    <option value="1">
-                                    <option value="2">
-                                    <option value="3">
-                                    <option value="4">
-                                    <option value="5">
-                                </datalist>
-                                <label for="" class="fz-14 fw-bold">AED 199.00</label>
-                                <label for="" class="fz-13 text-smooth">AED <strike>259.00</strike></label>
+                            </div>
+                            <div class="row col">
+                                <div class="cart-item__details w-300px">
+                                    <label class="fw-bold fz-14 text-danger offer-time" for="">offer ends in 16:20:23</label>
+                                    <label class="w-100 fz-13 mb-2" for="">
+                                        Wednesday 03, March, 2021
+                                        <img class="ms-sm-3" src="../assets/express.svg" alt="">
+                                    </label>
+                                    <input class="form-control" value="1"  list="datalistOptions" id="exampleDataList" placeholder="">
+                                    <datalist id="datalistOptions">
+                                        <option value="1">
+                                        <option value="2">
+                                        <option value="3">
+                                        <option value="4">
+                                        <option value="5">
+                                    </datalist>
+                                    <label for="" class="fz-15 fw-bold">AED 199.00</label>
+                                    <label for="" class="fz-13 text-smooth">AED <strike>259.00</strike></label>
+                                </div>
+                                
                             </div>
                             <div class="cart-item__btn">
-                                <button class="btn">Add to favorite</button>
-                                <button class="btn">Delete from cart</button>
+                                <button class="btn">Buy now</button>
+                                <button class="btn">Add to cart</button>
+                                <button class="btn">Remove from wishlist</button>
                             </div>
                         </div>
                         <div class="d-flex flex-wrap ms-4 ps-2 mb-4">
@@ -521,29 +495,36 @@
                                 <div class="cart-item__details--title">
                                     Samsung 6.5 kg Fully-Automatic Top Loading  Washing Machine (WA65A4002VS/TL, Imperial Silver, Center Jet Technology)
                                 </div>
-                                <label class="w-100 fz-13 mb-2" for="">
-                                    Wednesday 03, March, 2021
-                                    <img class="ms-sm-3" src="../assets/express.svg" alt="">
-                                </label>
-                                <input class="form-control" value="1"  list="datalistOptions" id="exampleDataList" placeholder="">
-                                <datalist id="datalistOptions">
-                                    <option value="1">
-                                    <option value="2">
-                                    <option value="3">
-                                    <option value="4">
-                                    <option value="5">
-                                </datalist>
-                                <label for="" class="fz-14 fw-bold">AED 199.00</label>
-                                <label for="" class="fz-13 text-smooth">AED <strike>259.00</strike></label>
+                            </div>
+                            <div class="row col">
+                                <div class="cart-item__details w-300px">
+                                    <label class="fw-bold fz-14 text-danger offer-time" for="">offer ends in 16:20:23</label>
+                                    <label class="w-100 fz-13 mb-2" for="">
+                                        Wednesday 03, March, 2021
+                                        <img class="ms-sm-3" src="../assets/express.svg" alt="">
+                                    </label>
+                                    <input class="form-control" value="1"  list="datalistOptions" id="exampleDataList" placeholder="">
+                                    <datalist id="datalistOptions">
+                                        <option value="1">
+                                        <option value="2">
+                                        <option value="3">
+                                        <option value="4">
+                                        <option value="5">
+                                    </datalist>
+                                    <label for="" class="fz-15 fw-bold">AED 199.00</label>
+                                    <label for="" class="fz-13 text-smooth">AED <strike>259.00</strike></label>
+                                </div>
+                                
                             </div>
                             <div class="cart-item__btn">
-                                <button class="btn">Add to favorite</button>
-                                <button class="btn">Delete from cart</button>
+                                <button class="btn">Buy now</button>
+                                <button class="btn">Add to cart</button>
+                                <button class="btn">Remove from wishlist</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="pills-cancel" role="tabpanel" aria-labelledby="pills-cancel-tab">
+                <div class="tab-pane fade py-md-4" id="pills-cancel" role="tabpanel" aria-labelledby="pills-cancel-tab">
                     <div class="d-flex flex-wrap cart-item">
                         <div class="form-check col-12 mb-3">
                             <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
@@ -557,24 +538,31 @@
                                 <div class="cart-item__details--title">
                                     Samsung 6.5 kg Fully-Automatic Top Loading  Washing Machine (WA65A4002VS/TL, Imperial Silver, Center Jet Technology)
                                 </div>
-                                <label class="w-100 fz-13 mb-2" for="">
-                                    Wednesday 03, March, 2021
-                                    <img class="ms-sm-3" src="../assets/express.svg" alt="">
-                                </label>
-                                <input class="form-control" value="1"  list="datalistOptions" id="exampleDataList" placeholder="">
-                                <datalist id="datalistOptions">
-                                    <option value="1">
-                                    <option value="2">
-                                    <option value="3">
-                                    <option value="4">
-                                    <option value="5">
-                                </datalist>
-                                <label for="" class="fz-14 fw-bold">AED 199.00</label>
-                                <label for="" class="fz-13 text-smooth">AED <strike>259.00</strike></label>
+                            </div>
+                            <div class="row col">
+                                <div class="cart-item__details w-300px">
+                                    <label class="fw-bold fz-14 text-danger offer-time" for="">offer ends in 16:20:23</label>
+                                    <label class="w-100 fz-13 mb-2" for="">
+                                        Wednesday 03, March, 2021
+                                        <img class="ms-sm-3" src="../assets/express.svg" alt="">
+                                    </label>
+                                    <input class="form-control" value="1"  list="datalistOptions" id="exampleDataList" placeholder="">
+                                    <datalist id="datalistOptions">
+                                        <option value="1">
+                                        <option value="2">
+                                        <option value="3">
+                                        <option value="4">
+                                        <option value="5">
+                                    </datalist>
+                                    <label for="" class="fz-15 fw-bold">AED 199.00</label>
+                                    <label for="" class="fz-13 text-smooth">AED <strike>259.00</strike></label>
+                                </div>
+                                
                             </div>
                             <div class="cart-item__btn">
-                                <button class="btn">Add to favorite</button>
-                                <button class="btn">Delete from cart</button>
+                                <button class="btn">Buy now</button>
+                                <button class="btn">Add to cart</button>
+                                <button class="btn">Remove from wishlist</button>
                             </div>
                         </div>
                         <div class="d-flex flex-wrap ms-4 ps-2 mb-4">
@@ -583,24 +571,31 @@
                                 <div class="cart-item__details--title">
                                     Samsung 6.5 kg Fully-Automatic Top Loading  Washing Machine (WA65A4002VS/TL, Imperial Silver, Center Jet Technology)
                                 </div>
-                                <label class="w-100 fz-13 mb-2" for="">
-                                    Wednesday 03, March, 2021
-                                    <img class="ms-sm-3" src="../assets/express.svg" alt="">
-                                </label>
-                                <input class="form-control" value="1"  list="datalistOptions" id="exampleDataList" placeholder="">
-                                <datalist id="datalistOptions">
-                                    <option value="1">
-                                    <option value="2">
-                                    <option value="3">
-                                    <option value="4">
-                                    <option value="5">
-                                </datalist>
-                                <label for="" class="fz-14 fw-bold">AED 199.00</label>
-                                <label for="" class="fz-13 text-smooth">AED <strike>259.00</strike></label>
+                            </div>
+                            <div class="row col">
+                                <div class="cart-item__details w-300px">
+                                    <label class="fw-bold fz-14 text-danger offer-time" for="">offer ends in 16:20:23</label>
+                                    <label class="w-100 fz-13 mb-2" for="">
+                                        Wednesday 03, March, 2021
+                                        <img class="ms-sm-3" src="../assets/express.svg" alt="">
+                                    </label>
+                                    <input class="form-control" value="1"  list="datalistOptions" id="exampleDataList" placeholder="">
+                                    <datalist id="datalistOptions">
+                                        <option value="1">
+                                        <option value="2">
+                                        <option value="3">
+                                        <option value="4">
+                                        <option value="5">
+                                    </datalist>
+                                    <label for="" class="fz-15 fw-bold">AED 199.00</label>
+                                    <label for="" class="fz-13 text-smooth">AED <strike>259.00</strike></label>
+                                </div>
+                                
                             </div>
                             <div class="cart-item__btn">
-                                <button class="btn">Add to favorite</button>
-                                <button class="btn">Delete from cart</button>
+                                <button class="btn">Buy now</button>
+                                <button class="btn">Add to cart</button>
+                                <button class="btn">Remove from wishlist</button>
                             </div>
                         </div>
                     </div>
