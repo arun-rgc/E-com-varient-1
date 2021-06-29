@@ -14,7 +14,7 @@
     <!-- header menu -->
     <div class="container-fluid d-flex flex-wrap px-3 py-1 w-100 header align-items-center justify-content-between bg-white" id="top">
         <div class="header__left-control order-1 order-xl-1 d-flex mb-xl-0 mb-3">
-            <button class="openbtn d-md-none" onclick="openNav()">☰</button> 
+            <button class="openbtn d-lg-none" onclick="openNav()">☰</button> 
             <div class="header__logo"><img src="../assets/RGC LOGO.svg" alt=""></div>
             <div class="col d-none d-md-flex header__location align-items-center">
                 <img src="../assets/gmap.svg" alt="">
@@ -92,7 +92,7 @@
         </div>
     </div>
     <!-- category menu -->
-    <div class="container-fluid d-md-flex d-none p-0 w-100 top-menu align-items-center">
+    <div class="container-fluid d-lg-flex d-none p-0 w-100 top-menu align-items-center">
         <div class="col overflowx-hidden">
             
             <nav class="navbar navbar-expand-lg navbar-dark category-menu">
@@ -200,12 +200,31 @@
 
 
     <!-- mobile menu -->
-    <div id="mySidebar" class="sidebar">
+    <div id="mySidebar" class="sidebar profile">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-        <a href="#">Category1</a>
-        <a href="#">Category1</a>
-        <a href="#">Category1</a>
-        <a href="#">Category1</a>
+        <ul class="nav flex-column mt-2 ">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Orders</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Wishlist</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Payments</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Seller account</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Profile</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Setting</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">More</a>
+            </li>
+        </ul>
 
         <hr>
 
@@ -217,7 +236,6 @@
         </div>
     </div>
      <!-- mobile menu -->
-
 
     <div class="container-fluid p-0 d-flex">
         <div class="user-sidebar p-0">
