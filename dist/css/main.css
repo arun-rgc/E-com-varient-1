@@ -292,6 +292,10 @@ button, input, text-area {
   width: 150px !important;
 }
 
+.w-130px {
+  width: 130px !important;
+}
+
 .w-110px {
   width: 110px !important;
 }
@@ -375,6 +379,10 @@ button, input, text-area {
 .payment-options img {
   width: auto;
   height: 20px;
+}
+
+.overflow-x-scroll {
+  overflow-x: scroll;
 }
 
 .category-menu {
@@ -1306,6 +1314,11 @@ input:checked::before {
   height: 27px;
   font-size: 12px;
   padding: 4px;
+}
+
+.order-table {
+  min-width: 800px;
+  width: 100%;
 }
 
 .footer-link {
