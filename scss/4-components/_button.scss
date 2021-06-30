@@ -82,3 +82,14 @@ button{
     padding-left: 10px !important;
     margin-left: 10px !important;
 }
+
+
+.gradient-btn{
+    color: color(white) !important;
+    background: color(gradient-1) !important;
+    border:0px !important;
+    transition: 200ms ease;
+    &:hover{
+        box-shadow: 1px 4px 8px #2d2d2d4a !important;
+    }
+}
