@@ -33,6 +33,8 @@
 }
 .top-menu{
     background: color(gradient-1);
+    height: 35px;
+    overflow: hidden;
     .nav-link{
         color: color(white) !important;
         font-size: 13px;

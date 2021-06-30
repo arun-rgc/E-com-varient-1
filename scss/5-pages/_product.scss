@@ -1,8 +1,11 @@
 .product-view{
     padding: 0px 20px;
-    width: 400px;
+    width: 525px;
     @include d-flex;
     align-items: flex-start;
+    &__slider{
+        margin: 0px 30px;
+    }
     &__grid{
         width: 120px;
         margin-right: 20px;

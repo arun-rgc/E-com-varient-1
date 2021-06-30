@@ -47,7 +47,7 @@
         </div>
         <div class="header__right-control order-2 order-xl-3 d-flex justify-content-end align-items-center mb-xl-0 mb-3">
             <div class="col order-3 order-md-1 d-none d-md-flex">
-                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <button class="btn dropdown-toggle d-flex align-items-center justify-content-start w-100" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                     <i class="bi bi-globe fz-15"></i>
                     <label class="ms-1 fz-10" for="">English</label>
                 </button>
@@ -58,9 +58,9 @@
                 </ul>
             </div>
             <div class="col order-2 order-md-2 d-none d-md-flex">
-                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <button class="btn dropdown-toggle d-flex align-items-center justify-content-start w-100" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                     <img src="../assets/uae flag.svg" alt="">
-                    <label class="ms-2 fz-10" for="">UAE</label>
+                    <label class="ms-1 fz-10" for="">UAE</label>
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                     <li><a class="dropdown-item" href="#">Fashion</a></li>
@@ -93,7 +93,7 @@
         </div>
     </div>
     <!-- category menu -->
-    <div class="container-fluid d-md-flex d-none p-0 w-100 top-menu align-items-center">
+    <div class="container-fluid d-md-flex d-none p-0 py-lg-0 py-2 w-100 top-menu align-items-center justify-content-between">
         <div class="col overflowx-hidden">
             
             <nav class="navbar navbar-expand-lg navbar-dark category-menu">
@@ -381,7 +381,12 @@
                     <div uk-dropdown="mode: click">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
                 </div>
             </div>
+            <div class="d-flex fit-height mt-2 align-items-center">
+                <span class="fz-14 rounded bg-primary text-white px-3 py-1 fw-500 fit-height">18% off</span>
+                <span class="fz-14 ms-3">You save <span class="fw-500">AED 770.00</span></span>    
+            </div>
             <div class="price-sec">
+                
                 <div class="col-lg fit-width me-2">
                     <div class="border-end position-relative">
                         <label class="w-100 fz-13" for="">Price</label>
@@ -390,23 +395,12 @@
                     </div>
                 </div>
                 <div class="col-lg fit-width me-2">
-                    <div class=" border-end">
+                    <div class="">
                         <label class="w-100 fz-13" for="">M.R.P</label>
                         <label class="fz-20 fw-500 text-danger line-height-inherit" for=""><span class="fz-13">AED</span> <strike >4429.00</strike></label>
                     </div>
                 </div>
-                <div class="col me-2 d-none d-lg-flex">
-                    <div class="border-end">
-                        <label class="w-100 fz-13" for="">Save</label>
-                        <label class="fz-20 fw-500  line-height-inherit" for=""><span class="fz-13">AED</span> 770.00</label>
-                    </div>
-                </div>
-                <div class="col d-none d-lg-flex">
-                    <div class="">
-                        <label class="w-100 fz-13" for="">Offer</label>
-                        <label class="fz-20 fw-500  line-height-inherit" for="">18%</label>
-                    </div>
-                </div>
+                
             </div>
             <label class="fz-18 fw-500 mt-4 w-100" for="">In stock</label>
             <label class="fz-15 fw-500 mt-3 w-100" for="">Color</label>
@@ -463,6 +457,40 @@
                 </ul>
             </div>
             <a href="" class="fz-14 w-100 mt-3">More details</a>
+            <label class="fz-15 fw-500 mt-4 w-100" for="">Offers</label>
+            <div class="d-flex align-items-start mt-3 w-100">
+                <div class="fit-content fz-13">
+                    <b>Bank offer -</b>
+                </div>
+                <div class="col d-flex flex-column ms-3">
+                    <label for="" class="info my-1">5% discount for HSS credit card</label>
+                    <label for="" class="info my-1">7% discount for IDBDI credit card</label>
+                </div>
+            </div>
+            <div class="d-flex align-items-start mt-1 w-100">
+                <div class="fit-content fz-13">
+                    <b>Cash back offer -</b>
+                </div>
+                <div class="col d-flex flex-column ms-3">
+                    <label for="" class="info my-1">10% for prime members</label>
+                </div>
+            </div>
+            <div class="d-flex align-items-start mt-1 w-100">
+                <div class="fit-content fz-13">
+                    <b>No cost EMI - </b>
+                </div>
+                <div class="col d-flex flex-column ms-3">
+                    <label for="" class="info my-1"> No Cost EMI available <a class="fz-12" href="">EMI options</a></label>
+                </div>
+            </div>
+            <div class="d-flex align-items-start mt-1 w-100">
+                <div class="fit-content fz-13">
+                    <b>Exchange offer- </b>
+                </div>
+                <div class="col d-flex flex-column ms-3">
+                    <label for="" class="info my-1">Unavailable for this product </label>
+                </div>
+            </div>
         </div>
         <div class="d-flex flex-wrap mt-4 d-xl-none col-md-6 px-3 order-4 order-md-3 w-100">
             <label class="fz-15 fw-500 w-100" for="">Highlights</label>
@@ -601,18 +629,7 @@
             
         </div>
         <div class="product-cartoffer px-md-4 px-3 mt-4 mt-xl-0 order-3 order-md-4">
-            <div class="uk-inline mb-2">
-                <button class="uk-button uk-button-default drop-btn text-medium" type="button">Your loyality benefits<span class="small" uk-icon="chevron-down"></span></button>
-                <div uk-dropdown="mode: click">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
-            </div>
-            <div class="w-100">
-                <label for="" class="info border-end pe-2 me-2">Order in <b>13</b> Hours</label>
-                <label for="" class="info">Delivered on  <b>Monday , March 8</b> </label>
-            </div>
-            <div class="w-100">
-                <label for="" class="info border-end pe-2 me-2">Delivered Cost  <b>AED 0.00</b> </label>
-                <label for="" class="info">Delivered by  <img class="ms-2" src="../assets/express.svg" alt=""> </label>
-            </div>
+            
             <div class="cart-card">
                 <div class="uk-inline mb-2">
                     <button class="uk-button uk-button-default drop-btn text-medium" type="button">Your loyality benefits<span class="small" uk-icon="chevron-down"></span></button>
@@ -648,43 +665,27 @@
                 </div>
                 
             </div>
-            <div class="uk-inline my-2">
-                <button class="uk-button uk-button-default drop-btn text-medium" type="button">Additional warranty<span class="small" uk-icon="chevron-down"></span></button>
-                <div uk-dropdown="mode: click">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
-            </div>
-            <label class="fz-15 fw-500 mt-4 w-100" for="">Offers</label>
-            <div class="d-flex align-items-start mt-3 w-100">
-                <div class="fit-content fz-13">
-                    <b>Bank offer -</b>
-                </div>
-                <div class="col d-flex flex-column ms-3">
-                    <label for="" class="info my-1">5% discount for HSS credit card</label>
-                    <label for="" class="info my-1">7% discount for IDBDI credit card</label>
+            <div class="w-100">
+                
+                <div class="uk-inline my-2">
+                    <button class="uk-button uk-button-default drop-btn text-medium" type="button">Additional warranty<span class="small" uk-icon="chevron-down"></span></button>
+                    <div uk-dropdown="mode: click">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
                 </div>
             </div>
-            <div class="d-flex align-items-start mt-1 w-100">
-                <div class="fit-content fz-13">
-                    <b>Cash back offer -</b>
-                </div>
-                <div class="col d-flex flex-column ms-3">
-                    <label for="" class="info my-1">10% for prime members</label>
-                </div>
-            </div>
-            <div class="d-flex align-items-start mt-1 w-100">
-                <div class="fit-content fz-13">
-                    <b>No cost EMI - </b>
-                </div>
-                <div class="col d-flex flex-column ms-3">
-                    <label for="" class="info my-1"> No Cost EMI available <a class="fz-12" href="">EMI options</a></label>
+            
+            <div class="w-100">
+                <div class="uk-inline mb-2">
+                    <button class="uk-button uk-button-default drop-btn text-medium" type="button">Your loyality benefits<span class="small" uk-icon="chevron-down"></span></button>
+                    <div uk-dropdown="mode: click">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
                 </div>
             </div>
-            <div class="d-flex align-items-start mt-1 w-100">
-                <div class="fit-content fz-13">
-                    <b>Exchange offer- </b>
-                </div>
-                <div class="col d-flex flex-column ms-3">
-                    <label for="" class="info my-1">Unavailable for this product </label>
-                </div>
+            <div class="w-100">
+                <label for="" class="info border-end pe-2 me-2">Order in <b>13</b> Hours</label>
+                <label for="" class="info">Delivered on  <b>Monday , March 8</b> </label>
+            </div>
+            <div class="w-100">
+                <label for="" class="info border-end pe-2 me-2">Delivered Cost  <b>AED 0.00</b> </label>
+                <label for="" class="info">Delivered by  <img class="ms-2" src="../assets/express.svg" alt=""> </label>
             </div>
             <div class="d-lg-flex d-none flex-wrap w-100">
                 <label class="fz-15 fw-500 mt-4 w-100" for="">Services</label>
