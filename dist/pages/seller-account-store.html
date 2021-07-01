@@ -329,7 +329,7 @@
                                     <div class="final-path"></div>
                                 </div>
                             </div>
-                            <div class="process-frame__control level-1" >
+                            <div class="process-frame__control level-3" >
                                 <!-- level-1 (use class level-1)  -->
                                 <!-- clip-path: polygon(100% 50%, 100% 50%, 100% 50%, 100% 100%, 0 100%, 0 50%, 50% 50%); -->
                                 <!-- level-2 (use class level-2)-->
@@ -343,75 +343,252 @@
                 </div>
                 <div class="col-md ps-md-5 mt-5 pt-4 ms-md-4">
                     <h4 class="fz-21 d-flex justify-content-between  w-100 mb-3">
-                        Seller Information
+                        Setup your store
                     </h4>
-                    
-                    <h6 class="mt-3 fz-16 fw-bold d-flex justify-content-between  w-100 mb-1 ">
-                        Business Address
-                    </h6>
-                    <div class="d-flex flex-wrap">
-                        <div class="col-lg-6">
-                            <p class="mt-2 mb-0 fz-14">
-                                <span class="mt-3 fw-bold w-100 mb-1">
-                                    Peter Nonstrictch
-                                    <a class="fz-14 fw-normal ms-1" href="#">Change</a>
-                                </span>
-                                <p class="m-0 fz-14">
-                                    Thenakara(House), 
-                                    <br>
-                                    Thututhippally, Jeeva Nagar PO 
-                                    <br>
-                                    Kottayam, Kerala, India,
-                                    <br>
-                                    Pin:614258
-                                </p>
-                                <p class="my-1 fz-14">
-                                    Email - peternonstrich@gmail.com
-                                    <a class="fz-14 fw-normal ms-1" href="#">Change</a>
-                                </p>
-                                <p class="my-1 fz-14">
-                                    Mob - +85 865 658 10
-                                    <a class="fz-14 fw-normal ms-1" href="#">Change</a>
-                                </p>
-                            </p>
+                    <div class="row mb-4">
+                        <div class="col-sm-6 mb-3">
+                            <label for="storename" class="form-label fz-13 mb-0">Store name</label>
+                            <input class="form-control" type="text" id="storename ">
                         </div>
-                        <div class="col-lg ms-lg-4 ms-md-0">
-                            <p class="mt-0 mb-0 fz-14">
-                                <span class="mt-3 fw-bold w-100 mb-1 w-100 d-block">
-                                    Geo location
-                                </span>
-                                <img class="mt-3" src="../assets/map.png" alt="">
-                            </p>
+                        <div class="col-sm-6 mb-3">
+                            <label for="StoreID" class="form-label fz-13 mb-0">StoreID</label>
+                            <input class="form-control" type="number" id="StoreID">
                         </div>
-                    </div>
-                    <h6 class="mt-3 fz-16 fw-bold d-flex justify-content-between  w-100 mb-1 ">
-                        Bank Account
-                    </h6>
-                    <div class="d-flex flex-wrap">
-                        <div class="col-md-6">
-                            <p class="mt-2 mb-0 fz-14">
-                                <span class="mt-3 fw-bold w-100 mb-1">
-                                    State Bank of India 
-                                    <a class="fz-14 fw-normal ms-1" href="#">Change</a>
+                        <div for="" class="fz-14 d-flex align-items-center mt-3">
+                            About product ?
+                            <label class="status-circle">
+                                <span class="success">
+                                    <i class="bi bi-check"></i>
                                 </span>
-                                <p class="m-0 fz-14">
-                                    Name on the card : Peter Nostricth
-                                    <br>
-                                    5 2 1 1   1 4 * *   * * * *   5 1 1 8
-                                    <br>
-                                    Account No : 996 686 985 666
-                                    <br>
-                                </p>
-                                <div class="mb-0">
-                                    <label for="exampleFormControlInput1" class="form-label fz-13 mb-0">EnterPAN card number</label>
-                                    <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="">
+                                <span class="fail d-none">
+                                    <i class="bi bi-x"></i>
+                                </span>
+                            </label>
+                            <label class="status-circle">
+                                <span class="success">
+                                    <i class="bi bi-check"></i>
+                                </span>
+                                <span class="fail d-none">
+                                    <i class="bi bi-x"></i>
+                                </span>
+                            </label>
+                            <label class="status-circle">
+                                <span class="success">
+                                    <i class="bi bi-check"></i>
+                                </span>
+                                <span class="fail d-none">
+                                    <i class="bi bi-x"></i>
+                                </span>
+                            </label>
+                            <label class="status-circle">
+                                <span class="success d-none">
+                                    <i class="bi bi-check"></i>
+                                </span>
+                                <span class="fail">
+                                    <i class="bi bi-x"></i>
+                                </span>
+                            </label>
+                            <label class="status-circle">
+                                <span class="success">
+                                    <i class="bi bi-check"></i>
+                                </span>
+                                <span class="fail d-none">
+                                    <i class="bi bi-x"></i>
+                                </span>
+                            </label>
+                            <label class="status-circle">
+                                <span class="success d-none">
+                                    <i class="bi bi-check"></i>
+                                </span>
+                                <span class="fail d-none">
+                                    <i class="bi bi-x"></i>
+                                </span>
+                            </label>
+                        </div>
+                        <div for="" class="fz-14 d-flex align-items-center mt-3">
+                            Product categories ?
+                            <label class="status-circle">
+                                <span class="success">
+                                    <i class="bi bi-check"></i>
+                                </span>
+                                <span class="fail d-none">
+                                    <i class="bi bi-x"></i>
+                                </span>
+                            </label>
+                            <label class="status-circle">
+                                <span class="success">
+                                    <i class="bi bi-check"></i>
+                                </span>
+                                <span class="fail d-none">
+                                    <i class="bi bi-x"></i>
+                                </span>
+                            </label>
+                            <label class="status-circle">
+                                <span class="success">
+                                    <i class="bi bi-check"></i>
+                                </span>
+                                <span class="fail d-none">
+                                    <i class="bi bi-x"></i>
+                                </span>
+                            </label>
+                            <label class="status-circle">
+                                <span class="success d-none">
+                                    <i class="bi bi-check"></i>
+                                </span>
+                                <span class="fail">
+                                    <i class="bi bi-x"></i>
+                                </span>
+                            </label>
+                            <label class="status-circle">
+                                <span class="success">
+                                    <i class="bi bi-check"></i>
+                                </span>
+                                <span class="fail d-none">
+                                    <i class="bi bi-x"></i>
+                                </span>
+                            </label>
+                            <label class="status-circle">
+                                <span class="success d-none">
+                                    <i class="bi bi-check"></i>
+                                </span>
+                                <span class="fail d-none">
+                                    <i class="bi bi-x"></i>
+                                </span>
+                            </label>
+                        </div>
+                        <h6 class="mt-3 fz-16 fw-bold d-flex justify-content-between  w-100 mb-1 ">
+                            Do you have barcodes ?
+                        </h6>
+                        <div class="d-flex flex-column">
+                            <div class="form-check mt-2">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Yes
+                                </label>
+                            </div>   
+                            <div class="form-check mt-2">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    No
+                                </label>
+                            </div> 
+                            <div class="form-check mt-2">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Some of them
+                                </label>
+                            </div>                              
+                        </div>
+                        <div class="col-12 my-3">
+                            <label for="storename" class="form-label fz-13 mb-0">You’re almost there..!</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Any messages"></textarea>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-4 mb-3">
+                                <div class="product-card_3 col-3 p-3 my-2 w-90 mx-2 position-relative">
+                                    <img class="mx-auto" src="../assets/camera.png" alt="">
                                 </div>
-                            </p>
+                                <h6 class="mt-3 fz-16 fw-bold d-flex justify-content-between  w-100 mb-2 ">
+                                    Footwares
+                                </h6>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Travel accessories
+                                    </label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Clothing
+                                    </label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Travel accessories
+                                    </label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Clothing
+                                    </label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-4 mb-3">
+                                <div class="product-card_3 col-3 p-3 my-2 w-90 mx-2 position-relative">
+                                    <img class="mx-auto" src="../assets/camera.png" alt="">
+                                </div>
+                                <h6 class="mt-3 fz-16 fw-bold d-flex justify-content-between  w-100 mb-2 ">
+                                    Footwares
+                                </h6>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Travel accessories
+                                    </label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Clothing
+                                    </label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Travel accessories
+                                    </label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Clothing
+                                    </label>
+                                </div>
+                                
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-4 mb-3">
+                                <div class="product-card_3 col-3 p-3 my-2 w-90 mx-2 position-relative">
+                                    <img class="mx-auto" src="../assets/camera.png" alt="">
+                                </div>
+                                <h6 class="mt-3 fz-16 fw-bold d-flex justify-content-between  w-100 mb-2 ">
+                                    Footwares
+                                </h6>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Travel accessories
+                                    </label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Clothing
+                                    </label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Travel accessories
+                                    </label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Clothing
+                                    </label>
+                                </div>
+                                
+                            </div>
+                            
                         </div>
                     </div>
-                    <a href="./seller-account-documents.html" class="btn gradient-btn px-4">
+                    <button class="btn gradient-btn px-4">           
                         Next
-                    </a>
+                    </button>
                 </div>
             </div>
 
