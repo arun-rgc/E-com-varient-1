@@ -74,7 +74,16 @@
         font-size: 13px;
     }
 }
-
+.form-switch{
+    input[type='checkbox']{
+        &::before{
+            content: inherit !important;
+        }
+        &:after{
+            content: inherit !important;
+        }
+    }
+}
 input[type='checkbox']{
     position: relative;
     &::before{
