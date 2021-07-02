@@ -1629,6 +1629,27 @@ button {
   background: #d8a2f2;
 }
 
+.coupons-card {
+  margin-top: 40px;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #e9ecef;
+  -webkit-box-shadow: 0px 0px 10px #c3c3c3;
+          box-shadow: 0px 0px 10px #c3c3c3;
+}
+
+.coupons-card img {
+  margin-top: -50px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.coupons-card span {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
 .search-box {
   position: relative;
   width: 100%;

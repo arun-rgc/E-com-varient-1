@@ -263,10 +263,10 @@
                         <a class="nav-link" href="#">Profile</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Setting</a>
+                        <a class="nav-link " href="#">Setting</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">More</a>
+                        <a class="nav-link active" href="#">More</a>
                     </li>
                 </ul>
             </div>
@@ -279,190 +279,115 @@
             <div class="d-flex-flex-wrap w-100 p-3">
                 <ul class="nav nav-pills mb-3 border-bottom w-100 nav-tab-1" id="pills-tab" role="tablist">
                     <li class="nav-item me-3" role="presentation">
-                        <button class="nav-link active" id="pills-desktop-tab" data-bs-toggle="pill" data-bs-target="#pills-desktop" type="button" role="tab" aria-controls="pills-desktop" aria-selected="true">Desktop Notifications</button>
+                        <button class="nav-link active" id="pills-desktop-tab" data-bs-toggle="pill" data-bs-target="#pills-desktop" type="button" role="tab" aria-controls="pills-desktop" aria-selected="true">Gift cards</button>
                     </li>
                     <li class="nav-item me-3" role="presentation">
-                        <button class="nav-link" id="pills-app-tab" data-bs-toggle="pill" data-bs-target="#pills-app" type="button" role="tab" aria-controls="pills-app" aria-selected="false">App notifications</button>
+                        <button class="nav-link" id="pills-app-tab" data-bs-toggle="pill" data-bs-target="#pills-app" type="button" role="tab" aria-controls="pills-app" aria-selected="false">Claim</button>
                     </li>
                     <li class="nav-item me-3" role="presentation">
-                        <button class="nav-link" id="pills-email-tab" data-bs-toggle="pill" data-bs-target="#pills-email" type="button" role="tab" aria-controls="pills-email" aria-selected="false">Email</button>
+                        <button class="nav-link" id="pills-email-tab" data-bs-toggle="pill" data-bs-target="#pills-email" type="button" role="tab" aria-controls="pills-email" aria-selected="false">Credits</button>
                     </li>
                     <li class="nav-item me-3" role="presentation">
-                        <button class="nav-link" id="pills-sms-tab" data-bs-toggle="pill" data-bs-target="#pills-sms" type="button" role="tab" aria-controls="pills-sms" aria-selected="false">SMS</button>
-                    </li>
-                    <li class="nav-item me-3" role="presentation">
-                        <button class="nav-link" id="pills-preferences-tab" data-bs-toggle="pill" data-bs-target="#pills-preferences" type="button" role="tab" aria-controls="pills-preferences" aria-selected="false">Preferences</button>
+                        <button class="nav-link" id="pills-sms-tab" data-bs-toggle="pill" data-bs-target="#pills-sms" type="button" role="tab" aria-controls="pills-sms" aria-selected="false">Coupons</button>
                     </li>
                 </ul>
                 <div class="tab-content" id="pills-tabContent">
+                    <div class="d-flex flex-wrap align-item-center mt-3">
+                        <div class="w-180px me-3">
+                            <select class="form-select fz-13" aria-label="Default select example">
+                                <option selected>Recently purchased</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                        </div>
+                    </div>
+
                     <div class="tab-pane fade show active py-md-4" id="pills-desktop" role="tabpanel" aria-labelledby="pills-desktop-tab">
-                        <div class="d-flex flex-wrap w-100">
-                            <div class="col-md-6">
-                                <div class="setting-card mb-3 pb-3 border-bottom">
-                                    <div class="fit-width d-flex align-items-center justify-content-between">
-                                        <div class="d-flex align-items-center">
-                                            <div class="product-card_3 col-3 p-3 w-90 mx-2 position-relative">
-                                                <img class="mx-auto" src="../assets/camera.png" alt="">
-                                            </div>
-                                            <div class="setting-card__details ms-2">
-                                                <label for="" class="fw-500 w-100 d-flex align-items-center">
-                                                    My orders
-                                                    <div class="form-check form-switch ms-3">
-                                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
-                                                    </div>
-                                                </label>
-                                                <label class="fz-13" for="">
-                                                    Latest updates on your orders
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <span uk-icon="icon:chevron-right; ratio: 1.5"></span>
-                                    </div>
+                        <div class="row mt-3">
+                            <div class="col-lg-3 col-md-4 col-6 mb-3">
+                                <div class="coupons-card">
+                                    <img src="../assets/malabar-gold-coupons.png" alt="">
+                                    <span>
+                                        Malabar Gold & Diamond Physical gift card
+                                    </span>
+                                    <h4 class="m-0">AED100</h4>
                                 </div>
-                                <div class="setting-card mb-3 pb-3 border-bottom">
-                                    <div class="fit-width d-flex align-items-center justify-content-between">
-                                        <div class="d-flex align-items-center">
-                                            <div class="product-card_3 col-3 p-3 w-90 mx-2 position-relative">
-                                                <img class="mx-auto" src="../assets/camera.png" alt="">
-                                            </div>
-                                            <div class="setting-card__details ms-2">
-                                                <label for="" class="fw-500 w-100 d-flex align-items-center">
-                                                    Remainders
-                                                    <div class="form-check form-switch ms-3">
-                                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
-                                                    </div>
-                                                </label>
-                                                <label class="fz-13" for="">
-                                                    Price Drops, Back-in-stock Products , etc.
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <span uk-icon="icon:chevron-right; ratio: 1.5"></span>
-                                    </div>
-                                </div>
-                                <div class="setting-card mb-3 pb-3 border-bottom">
-                                    <div class="fit-width d-flex align-items-center justify-content-between">
-                                        <div class="d-flex align-items-center">
-                                            <div class="product-card_3 col-3 p-3 w-90 mx-2 position-relative">
-                                                <img class="mx-auto" src="../assets/camera.png" alt="">
-                                            </div>
-                                            <div class="setting-card__details ms-2">
-                                                <label for="" class="fw-500 w-100 d-flex align-items-center">
-                                                    Recommendations by RGC
-                                                    <div class="form-check form-switch ms-3">
-                                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
-                                                    </div>
-                                                </label>
-                                                <label class="fz-13" for="">
-                                                    Products,offers and curated content based on your internet
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <span uk-icon="icon:chevron-right; ratio: 1.5"></span>
-                                    </div>
-                                </div>
-                                <div class="setting-card mb-3 pb-3 border-bottom">
-                                    <div class="fit-width d-flex align-items-center justify-content-between">
-                                        <div class="d-flex align-items-center">
-                                            <div class="product-card_3 col-3 p-3 w-90 mx-2 position-relative">
-                                                <img class="mx-auto" src="../assets/camera.png" alt="">
-                                            </div>
-                                            <div class="setting-card__details ms-2">
-                                                <label for="" class="fw-500 w-100 d-flex align-items-center">
-                                                    My orders
-                                                    <div class="form-check form-switch ms-3">
-                                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
-                                                    </div>
-                                                </label>
-                                                <label class="fz-13" for="">
-                                                    Latest updates on your orders
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <span uk-icon="icon:chevron-right; ratio: 1.5"></span>
-                                    </div>
-                                </div>
-                                <div class="setting-card mb-3 pb-3 border-bottom">
-                                    <div class="fit-width d-flex align-items-center justify-content-between">
-                                        <div class="d-flex align-items-center">
-                                            <div class="product-card_3 col-3 p-3 w-90 mx-2 position-relative">
-                                                <img class="mx-auto" src="../assets/camera.png" alt="">
-                                            </div>
-                                            <div class="setting-card__details ms-2">
-                                                <label for="" class="fw-500 w-100 d-flex align-items-center">
-                                                    My orders
-                                                    <div class="form-check form-switch ms-3">
-                                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
-                                                    </div>
-                                                </label>
-                                                <label class="fz-13" for="">
-                                                    Latest updates on your orders
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <span uk-icon="icon:chevron-right; ratio: 1.5"></span>
-                                    </div>
-                                </div>
-                                <div class="setting-card mb-3 pb-3 border-bottom">
-                                    <div class="fit-width d-flex align-items-center justify-content-between">
-                                        <div class="d-flex align-items-center">
-                                            <div class="product-card_3 col-3 p-3 w-90 mx-2 position-relative">
-                                                <img class="mx-auto" src="../assets/camera.png" alt="">
-                                            </div>
-                                            <div class="setting-card__details ms-2">
-                                                <label for="" class="fw-500 w-100 d-flex align-items-center">
-                                                    My orders
-                                                    <div class="form-check form-switch ms-3">
-                                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
-                                                    </div>
-                                                </label>
-                                                <label class="fz-13" for="">
-                                                    Latest updates on your orders
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <span uk-icon="icon:chevron-right; ratio: 1.5"></span>
-                                    </div>
-                                </div>
-    
                             </div>
-                            <div class="col-md-6 ps-md-5">
-                                <div class="mb-4">
-                                    <label for="" class="fw-500 w-100 d-flex align-items-center">
-                                        Recommendations by RGC
-                                        <div class="form-check form-switch ms-3">
-                                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
-                                        </div>
-                                    </label>
-                                    <label class="fz-13" for="">
-                                        Products,offers and curated content based on your internet
-                                    </label>
+                            <div class="col-lg-3 col-md-4 col-6 mb-4">
+                                <div class="coupons-card">
+                                    <img src="../assets/malabar-gold-coupons.png" alt="">
+                                    <span>
+                                        Malabar Gold & Diamond Physical gift card
+                                    </span>
+                                    <h4 class="m-0">AED100</h4>
                                 </div>
-                                <div class="form-check mb-3">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                        Offers based on your interests
-                                    </label>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-6 mb-4">
+                                <div class="coupons-card">
+                                    <img src="../assets/malabar-gold-coupons.png" alt="">
+                                    <span>
+                                        Malabar Gold & Diamond Physical gift card
+                                    </span>
+                                    <h4 class="m-0">AED100</h4>
                                 </div>
-                                <div class="form-check mb-3">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                        Offers to complement your purchases
-                                    </label>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-6 mb-4">
+                                <div class="coupons-card">
+                                    <img src="../assets/malabar-gold-coupons.png" alt="">
+                                    <span>
+                                        Malabar Gold & Diamond Physical gift card
+                                    </span>
+                                    <h4 class="m-0">AED100</h4>
                                 </div>
-                                <div class="form-check mb-3">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                        Offers on products similar to past purchases
-                                    </label>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-6 mb-4">
+                                <div class="coupons-card">
+                                    <img src="../assets/malabar-gold-coupons.png" alt="">
+                                    <span>
+                                        Malabar Gold & Diamond Physical gift card
+                                    </span>
+                                    <h4 class="m-0">AED100</h4>
                                 </div>
-                                <div class="form-check mb-3">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                        Videos based on your interests
-                                    </label>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-6 mb-4">
+                                <div class="coupons-card">
+                                    <img src="../assets/malabar-gold-coupons.png" alt="">
+                                    <span>
+                                        Malabar Gold & Diamond Physical gift card
+                                    </span>
+                                    <h4 class="m-0">AED100</h4>
                                 </div>
-                                
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-6 mb-4">
+                                <div class="coupons-card">
+                                    <img src="../assets/malabar-gold-coupons.png" alt="">
+                                    <span>
+                                        Malabar Gold & Diamond Physical gift card
+                                    </span>
+                                    <h4 class="m-0">AED100</h4>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-4 col-6 mb-4">
+                                <div class="coupons-card">
+                                    <img src="../assets/malabar-gold-coupons.png" alt="">
+                                    <span>
+                                        Malabar Gold & Diamond Physical gift card
+                                    </span>
+                                    <h4 class="m-0">AED100</h4>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-lg-3 col-sm-4 col-6 mb-4">
+                                <div class="credit-card-add">
+                                    <button class="btn btn-xl">
+                                        <i class="bi bi-plus-lg"></i>
+                                        <span class="d-block w-100 text-center mt-3">
+                                            Explore more gift cards
+                                        </span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -857,344 +782,7 @@
                     </div>
                     <div class="tab-pane fade py-md-4" id="pills-sms" role="tabpanel" aria-labelledby="pills-sms-tab">
                         <div class="d-flex flex-wrap w-100">
-                            <div class="col-md-6">
-                                <div class="setting-card mb-3 pb-3 border-bottom">
-                                    <div class="fit-width d-flex align-items-center justify-content-between">
-                                        <div class="d-flex align-items-center">
-                                            <div class="product-card_3 col-3 p-3 w-90 mx-2 position-relative">
-                                                <img class="mx-auto" src="../assets/camera.png" alt="">
-                                            </div>
-                                            <div class="setting-card__details ms-2">
-                                                <label for="" class="fw-500 w-100 d-flex align-items-center">
-                                                    My orders
-                                                    <div class="form-check form-switch ms-3">
-                                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
-                                                    </div>
-                                                </label>
-                                                <label class="fz-13" for="">
-                                                    Latest updates on your orders
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <span uk-icon="icon:chevron-right; ratio: 1.5"></span>
-                                    </div>
-                                </div>
-                                <div class="setting-card mb-3 pb-3 border-bottom">
-                                    <div class="fit-width d-flex align-items-center justify-content-between">
-                                        <div class="d-flex align-items-center">
-                                            <div class="product-card_3 col-3 p-3 w-90 mx-2 position-relative">
-                                                <img class="mx-auto" src="../assets/camera.png" alt="">
-                                            </div>
-                                            <div class="setting-card__details ms-2">
-                                                <label for="" class="fw-500 w-100 d-flex align-items-center">
-                                                    Remainders
-                                                    <div class="form-check form-switch ms-3">
-                                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
-                                                    </div>
-                                                </label>
-                                                <label class="fz-13" for="">
-                                                    Price Drops, Back-in-stock Products , etc.
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <span uk-icon="icon:chevron-right; ratio: 1.5"></span>
-                                    </div>
-                                </div>
-                                <div class="setting-card mb-3 pb-3 border-bottom">
-                                    <div class="fit-width d-flex align-items-center justify-content-between">
-                                        <div class="d-flex align-items-center">
-                                            <div class="product-card_3 col-3 p-3 w-90 mx-2 position-relative">
-                                                <img class="mx-auto" src="../assets/camera.png" alt="">
-                                            </div>
-                                            <div class="setting-card__details ms-2">
-                                                <label for="" class="fw-500 w-100 d-flex align-items-center">
-                                                    Recommendations by RGC
-                                                    <div class="form-check form-switch ms-3">
-                                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
-                                                    </div>
-                                                </label>
-                                                <label class="fz-13" for="">
-                                                    Products,offers and curated content based on your internet
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <span uk-icon="icon:chevron-right; ratio: 1.5"></span>
-                                    </div>
-                                </div>
-                                <div class="setting-card mb-3 pb-3 border-bottom">
-                                    <div class="fit-width d-flex align-items-center justify-content-between">
-                                        <div class="d-flex align-items-center">
-                                            <div class="product-card_3 col-3 p-3 w-90 mx-2 position-relative">
-                                                <img class="mx-auto" src="../assets/camera.png" alt="">
-                                            </div>
-                                            <div class="setting-card__details ms-2">
-                                                <label for="" class="fw-500 w-100 d-flex align-items-center">
-                                                    My orders
-                                                    <div class="form-check form-switch ms-3">
-                                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
-                                                    </div>
-                                                </label>
-                                                <label class="fz-13" for="">
-                                                    Latest updates on your orders
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <span uk-icon="icon:chevron-right; ratio: 1.5"></span>
-                                    </div>
-                                </div>
-                                <div class="setting-card mb-3 pb-3 border-bottom">
-                                    <div class="fit-width d-flex align-items-center justify-content-between">
-                                        <div class="d-flex align-items-center">
-                                            <div class="product-card_3 col-3 p-3 w-90 mx-2 position-relative">
-                                                <img class="mx-auto" src="../assets/camera.png" alt="">
-                                            </div>
-                                            <div class="setting-card__details ms-2">
-                                                <label for="" class="fw-500 w-100 d-flex align-items-center">
-                                                    My orders
-                                                    <div class="form-check form-switch ms-3">
-                                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
-                                                    </div>
-                                                </label>
-                                                <label class="fz-13" for="">
-                                                    Latest updates on your orders
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <span uk-icon="icon:chevron-right; ratio: 1.5"></span>
-                                    </div>
-                                </div>
-                                <div class="setting-card mb-3 pb-3 border-bottom">
-                                    <div class="fit-width d-flex align-items-center justify-content-between">
-                                        <div class="d-flex align-items-center">
-                                            <div class="product-card_3 col-3 p-3 w-90 mx-2 position-relative">
-                                                <img class="mx-auto" src="../assets/camera.png" alt="">
-                                            </div>
-                                            <div class="setting-card__details ms-2">
-                                                <label for="" class="fw-500 w-100 d-flex align-items-center">
-                                                    My orders
-                                                    <div class="form-check form-switch ms-3">
-                                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
-                                                    </div>
-                                                </label>
-                                                <label class="fz-13" for="">
-                                                    Latest updates on your orders
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <span uk-icon="icon:chevron-right; ratio: 1.5"></span>
-                                    </div>
-                                </div>
-    
-                            </div>
-                            <div class="col-md-6 ps-md-5">
-                                <div class="mb-4">
-                                    <label for="" class="fw-500 w-100 d-flex align-items-center">
-                                        Recommendations by RGC
-                                        <div class="form-check form-switch ms-3">
-                                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
-                                        </div>
-                                    </label>
-                                    <label class="fz-13" for="">
-                                        Products,offers and curated content based on your internet
-                                    </label>
-                                </div>
-                                <div class="form-check mb-3">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                        Offers based on your interests
-                                    </label>
-                                </div>
-                                <div class="form-check mb-3">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                        Offers to complement your purchases
-                                    </label>
-                                </div>
-                                <div class="form-check mb-3">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                        Offers on products similar to past purchases
-                                    </label>
-                                </div>
-                                <div class="form-check mb-3">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                        Videos based on your interests
-                                    </label>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade py-md-4" id="pills-preferences" role="tabpanel" aria-labelledby="pills-preferences-tab">
-                        <div class="d-flex flex-wrap w-100">
-                            <div class="col-md-6">
-                                <div class="setting-card mb-3 pb-3 border-bottom">
-                                    <div class="fit-width d-flex align-items-center justify-content-between">
-                                        <div class="d-flex align-items-center">
-                                            <div class="product-card_3 col-3 p-3 w-90 mx-2 position-relative">
-                                                <img class="mx-auto" src="../assets/camera.png" alt="">
-                                            </div>
-                                            <div class="setting-card__details ms-2">
-                                                <label for="" class="fw-500 w-100 d-flex align-items-center">
-                                                    My orders
-                                                    <div class="form-check form-switch ms-3">
-                                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
-                                                    </div>
-                                                </label>
-                                                <label class="fz-13" for="">
-                                                    Latest updates on your orders
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <span uk-icon="icon:chevron-right; ratio: 1.5"></span>
-                                    </div>
-                                </div>
-                                <div class="setting-card mb-3 pb-3 border-bottom">
-                                    <div class="fit-width d-flex align-items-center justify-content-between">
-                                        <div class="d-flex align-items-center">
-                                            <div class="product-card_3 col-3 p-3 w-90 mx-2 position-relative">
-                                                <img class="mx-auto" src="../assets/camera.png" alt="">
-                                            </div>
-                                            <div class="setting-card__details ms-2">
-                                                <label for="" class="fw-500 w-100 d-flex align-items-center">
-                                                    Remainders
-                                                    <div class="form-check form-switch ms-3">
-                                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
-                                                    </div>
-                                                </label>
-                                                <label class="fz-13" for="">
-                                                    Price Drops, Back-in-stock Products , etc.
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <span uk-icon="icon:chevron-right; ratio: 1.5"></span>
-                                    </div>
-                                </div>
-                                <div class="setting-card mb-3 pb-3 border-bottom">
-                                    <div class="fit-width d-flex align-items-center justify-content-between">
-                                        <div class="d-flex align-items-center">
-                                            <div class="product-card_3 col-3 p-3 w-90 mx-2 position-relative">
-                                                <img class="mx-auto" src="../assets/camera.png" alt="">
-                                            </div>
-                                            <div class="setting-card__details ms-2">
-                                                <label for="" class="fw-500 w-100 d-flex align-items-center">
-                                                    Recommendations by RGC
-                                                    <div class="form-check form-switch ms-3">
-                                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
-                                                    </div>
-                                                </label>
-                                                <label class="fz-13" for="">
-                                                    Products,offers and curated content based on your internet
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <span uk-icon="icon:chevron-right; ratio: 1.5"></span>
-                                    </div>
-                                </div>
-                                <div class="setting-card mb-3 pb-3 border-bottom">
-                                    <div class="fit-width d-flex align-items-center justify-content-between">
-                                        <div class="d-flex align-items-center">
-                                            <div class="product-card_3 col-3 p-3 w-90 mx-2 position-relative">
-                                                <img class="mx-auto" src="../assets/camera.png" alt="">
-                                            </div>
-                                            <div class="setting-card__details ms-2">
-                                                <label for="" class="fw-500 w-100 d-flex align-items-center">
-                                                    My orders
-                                                    <div class="form-check form-switch ms-3">
-                                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
-                                                    </div>
-                                                </label>
-                                                <label class="fz-13" for="">
-                                                    Latest updates on your orders
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <span uk-icon="icon:chevron-right; ratio: 1.5"></span>
-                                    </div>
-                                </div>
-                                <div class="setting-card mb-3 pb-3 border-bottom">
-                                    <div class="fit-width d-flex align-items-center justify-content-between">
-                                        <div class="d-flex align-items-center">
-                                            <div class="product-card_3 col-3 p-3 w-90 mx-2 position-relative">
-                                                <img class="mx-auto" src="../assets/camera.png" alt="">
-                                            </div>
-                                            <div class="setting-card__details ms-2">
-                                                <label for="" class="fw-500 w-100 d-flex align-items-center">
-                                                    My orders
-                                                    <div class="form-check form-switch ms-3">
-                                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
-                                                    </div>
-                                                </label>
-                                                <label class="fz-13" for="">
-                                                    Latest updates on your orders
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <span uk-icon="icon:chevron-right; ratio: 1.5"></span>
-                                    </div>
-                                </div>
-                                <div class="setting-card mb-3 pb-3 border-bottom">
-                                    <div class="fit-width d-flex align-items-center justify-content-between">
-                                        <div class="d-flex align-items-center">
-                                            <div class="product-card_3 col-3 p-3 w-90 mx-2 position-relative">
-                                                <img class="mx-auto" src="../assets/camera.png" alt="">
-                                            </div>
-                                            <div class="setting-card__details ms-2">
-                                                <label for="" class="fw-500 w-100 d-flex align-items-center">
-                                                    My orders
-                                                    <div class="form-check form-switch ms-3">
-                                                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
-                                                    </div>
-                                                </label>
-                                                <label class="fz-13" for="">
-                                                    Latest updates on your orders
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <span uk-icon="icon:chevron-right; ratio: 1.5"></span>
-                                    </div>
-                                </div>
-    
-                            </div>
-                            <div class="col-md-6 ps-md-5">
-                                <div class="mb-4">
-                                    <label for="" class="fw-500 w-100 d-flex align-items-center">
-                                        Recommendations by RGC
-                                        <div class="form-check form-switch ms-3">
-                                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
-                                        </div>
-                                    </label>
-                                    <label class="fz-13" for="">
-                                        Products,offers and curated content based on your internet
-                                    </label>
-                                </div>
-                                <div class="form-check mb-3">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                        Offers based on your interests
-                                    </label>
-                                </div>
-                                <div class="form-check mb-3">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                        Offers to complement your purchases
-                                    </label>
-                                </div>
-                                <div class="form-check mb-3">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                        Offers on products similar to past purchases
-                                    </label>
-                                </div>
-                                <div class="form-check mb-3">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                        Videos based on your interests
-                                    </label>
-                                </div>
-                                
-                            </div>
+                            
                         </div>
                     </div>
 
