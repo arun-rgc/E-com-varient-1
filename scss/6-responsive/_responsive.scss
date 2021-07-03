@@ -214,7 +214,14 @@
         }
     }
 }
-
+@media(max-width:575px){
+    .coupon-scroll{
+        max-height: fit-content;
+    }
+    .coupon-1,.coupon-2,.coupon-3{
+        margin: 0;
+    }
+}
 @media(max-width:500px){
     .wishlist-item{
         .custom-detail{
