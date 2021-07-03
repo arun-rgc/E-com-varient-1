@@ -262,6 +262,9 @@
     }
 }
 @media(max-width:420px){
+    .process-frame{
+        max-width: 100%;
+    }
     .cart-card{
         padding: 5px 0;
         background: color(white);
