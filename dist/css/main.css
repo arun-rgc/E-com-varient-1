@@ -2231,6 +2231,12 @@ input:checked::before {
   color: #FFCE31;
 }
 
+.rating {
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+}
+
 .rating-percentage {
   -webkit-box-align: center;
       -ms-flex-align: center;
