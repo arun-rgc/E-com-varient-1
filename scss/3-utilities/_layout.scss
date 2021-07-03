@@ -151,6 +151,29 @@
         background: #555; 
     }
 }
+.coupon-scroll{
+    max-height: calc(100vh - 285px);
+    overflow-x: scroll;
+    padding-top: 10px;
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+    
+    /* Track */
+    &::-webkit-scrollbar-track {
+        background: #ffffff00; 
+    }
+    
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: #888; 
+    }
+    
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: #555; 
+    }
+}
 .overflow-x-scroll{
     overflow-x: scroll;
 }
