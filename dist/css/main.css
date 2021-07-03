@@ -485,6 +485,12 @@ button, input, text-area {
   width: 25px;
 }
 
+.frame-section {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .scoll-up {
   display: block;
   margin: 0px auto;
@@ -2978,6 +2984,9 @@ input:checked::before {
 }
 
 @media (max-width: 768px) {
+  .frame-section {
+    width: 100%;
+  }
   .wishlist-item .custom-detail {
     padding-left: 84px;
     width: 100% !important;
@@ -3052,6 +3061,12 @@ input:checked::before {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
     font-size: 11px;
+  }
+}
+
+@media (min-width: 570px) {
+  .process-mobile {
+    display: none !important;
   }
 }
 

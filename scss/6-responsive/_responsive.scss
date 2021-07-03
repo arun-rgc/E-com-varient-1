@@ -139,6 +139,9 @@
     }
 }
 @media(max-width:768px){
+    .frame-section{
+        width: 100%;
+    }
     .wishlist-item{
         .custom-detail{
             padding-left: 84px;
@@ -195,9 +198,6 @@
     .bg-sm-white{
         background: color(white);
     }
-    .product-card_1{
-        // border: none !important;
-    }
     .product-btn{
         width:90px
     }
@@ -212,6 +212,11 @@
             transform: translateX(-50%);
             font-size: 11px;
         }
+    }
+}
+@media(min-width:570px){
+    .process-mobile{
+        display: none !important;
     }
 }
 @media(max-width:575px){
