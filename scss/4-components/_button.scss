@@ -102,3 +102,24 @@ button{
     background: color(white);
     margin-bottom: 15px;
 }
+.edit-profilepic{
+    display: block;
+    width: 30px;
+    height: 30px;
+    @include flex-center;
+    color:color(dark) !important;
+    background: color(gray-200);
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    opacity: .5;
+    transition: 200ms;
+    cursor: pointer;
+    &:hover{
+        opacity: 1 !important;
+    }
+}
+.profilepic:hover ~ .edit-profilepic{
+    opacity: 1;
+}

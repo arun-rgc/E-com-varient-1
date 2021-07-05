@@ -418,7 +418,7 @@ button, input, text-area {
 }
 
 .coupon-scroll {
-  max-height: calc(100vh - 285px);
+  max-height: 560px;
   overflow-x: scroll;
   padding-top: 10px;
   /* Track */
@@ -893,6 +893,39 @@ button {
   margin-bottom: 15px;
 }
 
+.edit-profilepic {
+  display: block;
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #1A1A1A !important;
+  background: #e9ecef;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  opacity: .5;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+  cursor: pointer;
+}
+
+.edit-profilepic:hover {
+  opacity: 1 !important;
+}
+
+.profilepic:hover ~ .edit-profilepic {
+  opacity: 1;
+}
+
 .card {
   border: none !important;
 }
@@ -1137,11 +1170,12 @@ button {
   width: 100px;
   height: 100px;
   margin: auto;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  margin-top: 13px;
 }
 
 .user-box__name {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   min-width: 100%;
   text-align: center;
   font-size: 18px;
@@ -1397,8 +1431,8 @@ button {
 
 .process-frame__outerlayer .process-step {
   z-index: 10;
-  width: 65px;
-  height: 65px;
+  width: 55px;
+  height: 55px;
   border-radius: 50%;
   position: absolute;
   display: -webkit-box;
@@ -1418,6 +1452,7 @@ button {
 
 .process-frame__outerlayer .process-step i {
   line-height: 0px;
+  margin-bottom: 5px;
 }
 
 .process-frame__outerlayer .process-step span {
@@ -1458,20 +1493,20 @@ button {
 }
 
 .process-frame__outerlayer .first-step {
-  top: -35px;
+  top: -27px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
 
-.process-frame__outerlayer .first-step.active {
+.process-frame__outerlayer .process-step.active {
   color: #fff;
   background: #7E18B0;
 }
 
 .process-frame__outerlayer .second-step {
   top: 50%;
-  right: -35px;
+  right: -27px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
@@ -1484,7 +1519,7 @@ button {
 }
 
 .process-frame__outerlayer .third-step {
-  bottom: -35px;
+  bottom: -27px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -1500,14 +1535,14 @@ button {
 .process-frame__outerlayer .fourth-step {
   z-index: 20;
   top: 50%;
-  left: -35px;
+  left: -27px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
 
 .process-frame__outerlayer .final-step {
   top: 8%;
-  left: -35px;
+  left: -27px;
   z-index: 12;
   border: 1px solid #7E18B0;
 }
@@ -1739,6 +1774,12 @@ button {
   padding: 15px;
   border-radius: 8px;
   background-color: #e9ecef;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+  cursor: pointer;
+}
+
+.coupons-card:hover {
   -webkit-box-shadow: 0px 0px 10px #c3c3c3;
           box-shadow: 0px 0px 10px #c3c3c3;
 }

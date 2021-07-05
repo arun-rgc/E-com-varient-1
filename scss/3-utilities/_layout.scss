@@ -152,7 +152,7 @@
     }
 }
 .coupon-scroll{
-    max-height: calc(100vh - 285px);
+    max-height: 560px;
     overflow-x: scroll;
     padding-top: 10px;
     &::-webkit-scrollbar {
