@@ -1397,8 +1397,8 @@ button {
 
 .process-frame__outerlayer .process-step {
   z-index: 10;
-  width: 55px;
-  height: 55px;
+  width: 65px;
+  height: 65px;
   border-radius: 50%;
   position: absolute;
   display: -webkit-box;
@@ -1421,7 +1421,8 @@ button {
 }
 
 .process-frame__outerlayer .process-step span {
-  font-size: 10px;
+  font-size: 11px;
+  font-weight: 700;
 }
 
 .process-frame__outerlayer .check-step {
@@ -1457,7 +1458,7 @@ button {
 }
 
 .process-frame__outerlayer .first-step {
-  top: -27px;
+  top: -35px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -1470,7 +1471,7 @@ button {
 
 .process-frame__outerlayer .second-step {
   top: 50%;
-  right: -27px;
+  right: -35px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
@@ -1483,7 +1484,7 @@ button {
 }
 
 .process-frame__outerlayer .third-step {
-  bottom: -27px;
+  bottom: -35px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -1497,15 +1498,16 @@ button {
 }
 
 .process-frame__outerlayer .fourth-step {
+  z-index: 20;
   top: 50%;
-  left: -29px;
+  left: -35px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
 
 .process-frame__outerlayer .final-step {
   top: 8%;
-  left: -29px;
+  left: -35px;
   z-index: 12;
   border: 1px solid #7E18B0;
 }
