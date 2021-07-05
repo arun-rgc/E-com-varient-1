@@ -280,6 +280,13 @@
     }
 }
 @media(max-width:400px){
+    .cart-item__details.w-300px{
+        width: 100% !important;
+        margin-left: 0px;
+    }
+    .cart-item__control{
+        min-width: 50% !important; 
+    }
     .header__left-control {
         width: fit-content;
     }
