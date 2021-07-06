@@ -5,6 +5,7 @@
 }
 .rating{
     max-height: fit-content;
+    @include flex-center;
 }
 .rating-percentage{
     align-items: center;

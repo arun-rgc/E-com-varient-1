@@ -1,6 +1,8 @@
 .product-view{
     padding: 0px 20px;
-    width: 525px;
+    width: 560px;
+    position: sticky;
+    top: 40px;
     @include d-flex;
     align-items: flex-start;
     &__slider{
@@ -52,7 +54,7 @@
     width: 300px;
 }
 .product-cartoffer{
-    width: 400px;
+    width: 350px;
 }
 .product-brand {
     font-weight: weight(bold);
