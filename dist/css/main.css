@@ -2467,6 +2467,7 @@ input:checked::before {
   border: 0px;
   outline: none !important;
   padding: 5px;
+  text-align: center;
 }
 
 .addimg-block__block {
@@ -2905,6 +2906,13 @@ input:checked::before {
 }
 
 @media (max-width: 1200px) {
+  .product-view {
+    width: 50%;
+    padding: 0;
+  }
+  .product-view__grid {
+    margin: 0;
+  }
   .search-box {
     max-width: 350px;
   }
@@ -3045,6 +3053,9 @@ input:checked::before {
 }
 
 @media (max-width: 768px) {
+  .product-view {
+    position: static;
+  }
   .frame-section {
     width: 100%;
   }
