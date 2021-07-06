@@ -1000,6 +1000,10 @@ button {
   font-size: 13px;
 }
 
+.product-card_1 {
+  border: 1px solid #e9ecef !important;
+}
+
 .product-card_2 {
   border-radius: 50% !important;
   height: 130px;
@@ -2468,6 +2472,8 @@ input:checked::before {
   outline: none !important;
   padding: 5px;
   text-align: center;
+  background: #fff;
+  border: 1px solid #dee2e6;
 }
 
 .addimg-block__block {
