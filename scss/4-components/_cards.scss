@@ -7,6 +7,27 @@
     min-width: 27%;
     margin-top: 21px;
 }
+.mobile-shop-locator{
+    margin-top: 15px;
+    width: 100%;
+    padding: 20px 10px;
+    background: color(primary);
+    display: none;
+    .banner-details{
+        position: relative;
+        transform: inherit;
+        left: inherit;
+        top: inherit;
+        h4,label{
+            color: #fff;
+        }
+        button{
+            background-color: #fff !important;
+            color: #6C0194 !important;
+            border: 1px solid #fff !important;
+        }
+    }
+}
 .product-offer{
     background: color(primary);
     position: absolute;
@@ -627,4 +648,13 @@
     @include shadow-2;
     margin-right: 15px;
     margin-left: 5px;
+}
+
+.branch-sec{
+    .cart-card{
+        max-width:300px;
+    }
+}
+.store-details{
+    width: fit-content;
 }

@@ -213,3 +213,32 @@
 .frame-section{
     width: fit-content;
 }
+
+.clip-bg{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    clip-path: polygon(0 0, 100% 0, 91% 59%, 0% 100%);
+    background: #D7C1DF;
+    z-index: 0;
+}
+.banner{
+    position: relative;
+    min-height: 35vh;
+}
+.banner-details{
+    width: 93%;
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    .title{
+        font-family: 'popins' sans-serif !important;
+        font-weight: bold !important;
+        font-size: 24px;
+    }
+    .sub-title{
+        line-height: 20px;
+    }
+}

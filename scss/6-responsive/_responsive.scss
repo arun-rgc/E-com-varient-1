@@ -53,6 +53,28 @@
     }
 }
 @media(max-width:992px){
+    .shop-locator{
+        position: absolute;
+        width: 480px !important;
+        height: 238px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 10;
+        background-color: #0000008f;
+        color: #fff;
+        padding: 20px !important;
+        border-radius: 5px;
+        .title{
+            color: #fff;
+        }
+        .clip-bg{
+            display: none !important;
+        }
+        .banner-details{
+            width: 88%;
+        }
+    }
     .top-menu {
         height: fit-content;
         
@@ -311,5 +333,11 @@
     }
     .cart-item{
         margin-bottom: 20px;
+    }
+    .shop-locator{
+        width: 300px !important;
+        .banner-details{
+            width: 95%;
+        }
     }
 }
